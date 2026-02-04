@@ -44,8 +44,8 @@ export const ORACLE_STATE_SIZE = 69; // bytes
 
 // Default configuration
 export const DEFAULT_CONFIG = {
-  cluster: 'devnet' as Cluster,
-  rpcUrl: 'https://api.devnet.solana.com',
+  cluster: 'mainnet-beta' as Cluster,
+  rpcUrl: 'https://api.mainnet-beta.solana.com',
   monitorIntervalMs: 60_000, // 1 minute
   minYieldDifferenceBps: 50, // 0.5% minimum improvement to trigger update
   maxRiskScore: 70, // Don't consider protocols with risk > 70
