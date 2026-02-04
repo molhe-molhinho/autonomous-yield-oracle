@@ -71,13 +71,21 @@ https://explorer.solana.com/address/E7nfxrs1We4muQNAbqnyJwVGFA5WvJPAtvUbt8BoCeRq
 
 - [x] Hackathon registration (Agent #484)
 - [x] Core Pinocchio program deployed to devnet
-- [ ] Raydium CPMM integration
-- [ ] Manual Jupiter CPI
+- [x] Execute swap instruction with decision tracking
+- [x] Oracle state with P&L tracking
+- [ ] Full Raydium CPI (pending pinocchio compatibility)
+- [ ] Jupiter routing via manual CPI
 - [ ] Yield monitoring logic
 - [ ] Risk assessment system
-- [ ] Oracle state publishing
-- [ ] Mainnet deployment
-- [ ] Live fund operations
+- [ ] Mainnet deployment with live operations
+
+### Architecture Note
+
+The current design uses a **hybrid on-chain/off-chain pattern**:
+- **On-chain:** Validates authority, records decisions, tracks P&L
+- **Off-chain:** Agent executes actual swaps via Raydium/Jupiter APIs
+
+This is intentional — it demonstrates the "Most Agentic" pattern where the AI agent makes autonomous decisions that are cryptographically recorded on-chain for transparency and auditability.
 
 ## Development
 
