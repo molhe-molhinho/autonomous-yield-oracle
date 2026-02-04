@@ -1,0 +1,25 @@
+{
+  "currentPosition": {
+    "token": "jitoSOL",
+    "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "amount": "795117869",
+    "entryPrice": 1.257675168661063,
+    "entryTime": 1770224383924,
+    "protocol": 4
+  },
+  "totalPnlLamports": "0",
+  "tradesExecuted": 1,
+  "lastTradeTime": 1770224383924,
+  "history": [
+    {
+      "timestamp": 1770224383924,
+      "action": "enter",
+      "fromToken": "SOL",
+      "toToken": "jitoSOL",
+      "amountIn": "1000000000",
+      "amountOut": "795117869",
+      "signature": "21VMPpayKkqWbeG3RFiVEgaeno8fBiTrU4BKxv7N5G4PSS9h4uU4WAvLQmM5a4oUYWWoBLqPWZK8tWXXFzox4sh3",
+      "reason": "Best yield: Jito @ 7.47%"
+    }
+  ]
+}
