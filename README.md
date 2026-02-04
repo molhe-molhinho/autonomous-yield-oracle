@@ -82,9 +82,20 @@ The `pinocchio-raydium-cpmm-cpi` crate uses an older Pinocchio version (AccountI
 - **Program:** [`E7nfxrs1We4muQNAbqnyJwVGFA5WvJPAtvUbt8BoCeRq`](https://explorer.solana.com/address/E7nfxrs1We4muQNAbqnyJwVGFA5WvJPAtvUbt8BoCeRq)
 - **Oracle Account:** [`7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd`](https://explorer.solana.com/address/7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd)
 - **Agent Wallet:** [`3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W`](https://explorer.solana.com/address/3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W)
-- **Deploy TX:** [`5yQAcXRy...`](https://explorer.solana.com/tx/5yQAcXRy6TsBFy36g2cnSWXSRD4bqh5aGVBuSEkeE4ATWWab3Pa1UrsUWcC3hRCwqtmeooMM1pHnc7LMpBHnHpva)
-- **Init TX:** [`592SwxCGK2...`](https://explorer.solana.com/tx/592SwxCGK2NX4gNjQx5eojyYrfBde2EzH4U2zUohXjbEtgxjPmYCMx3xL339sjMtgyB9hwKrKaY5ztKmwdadGRG9)
-- **Funded:** ~4.9 SOL 💰
+- **First Decision:** [`2XT5eRcq...`](https://explorer.solana.com/tx/2XT5eRcqQtiF8nusneWY2JYFq4BihcViKXdsx1qT5W5uBEih98jjAjEQgPnzdqYftnHYa7uNuQm4awsuKQU2tAr6) ⭐
+- **Balance:** ~4.92 SOL 💰
+
+### 📈 First Mainnet Decision (Feb 4, 2026)
+
+The agent autonomously analyzed yields and recorded on-chain:
+| Protocol | APY | Risk | Risk-Adjusted |
+|----------|-----|------|---------------|
+| Raydium CPMM | 15.29% | 35 | **9.94%** ⭐ |
+| Kamino | 12.62% | 30 | 8.83% |
+| Jito | 7.76% | 18 | 6.36% |
+| Marinade | 6.81% | 15 | 5.79% |
+
+**Winner:** Raydium CPMM (SOL-USDC) with highest risk-adjusted yield!
 
 ### Devnet (Testing)
 - **Program:** [`E7nfxrs1We4muQNAbqnyJwVGFA5WvJPAtvUbt8BoCeRq`](https://explorer.solana.com/address/E7nfxrs1We4muQNAbqnyJwVGFA5WvJPAtvUbt8BoCeRq?cluster=devnet)
@@ -99,17 +110,18 @@ The `pinocchio-raydium-cpmm-cpi` crate uses an older Pinocchio version (AccountI
 - [x] Oracle state with yield tracking and P&L
 - [x] Risk-adjusted yield calculation formula
 - [x] Off-chain TypeScript agent with 24/7 loop
-- [x] Multi-protocol yield fetching (Marinade, Jito, Raydium)
+- [x] Multi-protocol yield fetching (DeFiLlama + fallback)
 - [x] Staleness detection and auto-refresh
 - [x] Devnet deployment and testing
-- [x] First autonomous decision recorded on-chain
-- [x] Forum presence (3 posts, community engagement)
+- [x] **MAINNET program deployment** 🚀
+- [x] **First mainnet autonomous decision** 🏆
+- [x] Forum presence (4 posts, community engagement)
 
 ### In Progress
-- [ ] Mainnet program deployment
-- [ ] Live mainnet operations with 5 SOL
-- [ ] Jupiter swap execution integration
+- [ ] 24/7 continuous operation
+- [ ] Jupiter swap execution (actual trades)
 - [ ] Real-time P&L tracking dashboard
+- [ ] Multi-strategy optimization
 
 ## 🚀 Running the Agent
 
