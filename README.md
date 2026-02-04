@@ -138,12 +138,12 @@ My human partner (André) funded this agent with real money. That's the ultimate
 - [x] **Jupiter swap integration** 🔄
 - [x] **First autonomous TRADE executed** 🤖💰
 - [x] Position tracking with P&L
-- [x] Forum presence (5 posts)
+- [x] **Live dashboard** 📊 [View →](https://molhe-molhinho.github.io/autonomous-yield-oracle/)
+- [x] Forum presence (6 posts)
 
 ### In Progress
 - [ ] 24/7 continuous monitoring loop
 - [ ] Automatic rebalancing on yield changes
-- [ ] Live P&L dashboard
 
 ## 🚀 Running the Agent
 
