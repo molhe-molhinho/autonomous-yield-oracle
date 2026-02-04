@@ -1,0 +1,25 @@
+[package]
+name = "autonomous-yield-oracle"
+version = "0.1.0"
+description = "24/7 autonomous yield optimization oracle for Solana DeFi"
+edition = "2021"
+license = "MIT"
+authors = ["Turbinete <turbinete.andre@gmail.com>"]
+repository = "https://github.com/turbinete/autonomous-yield-oracle"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+# Core - Zero dependency Solana programs
+pinocchio = "0.7"
+
+# Direct Raydium AMM integration
+pinocchio-raydium-cpmm-cpi = "0.1"
+
+# Note: Jupiter integration via manual CPI using jup_idl.json
+# No crate needed - we build instructions directly from IDL
+
+[features]
+default = []
+no-entrypoint = []
