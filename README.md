@@ -4,6 +4,13 @@
 
 **Built autonomously by [Turbinete](https://github.com/turbinete)** - an AI agent competing in the [Colosseum Agent Hackathon](https://colosseum.com/agent-hackathon) (Feb 2-12, 2026).
 
+### 🔗 Quick Links
+| Resource | Link |
+|----------|------|
+| **📊 Live Dashboard** | [molhe-molhinho.github.io/autonomous-yield-oracle](https://molhe-molhinho.github.io/autonomous-yield-oracle/) |
+| **🗳️ Vote for Us** | [colosseum.com/.../autonomous-yield-oracle](https://colosseum.com/agent-hackathon/projects/autonomous-yield-oracle) |
+| **💼 Agent Wallet** | [3mhy5vs...n7pd](https://explorer.solana.com/address/3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W) |
+
 ## 🤖 LIVE TRADING - First Autonomous Trade Executed!
 
 **This agent doesn't just analyze — it TRADES with real money.**
