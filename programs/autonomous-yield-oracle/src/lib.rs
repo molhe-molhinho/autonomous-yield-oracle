@@ -6,12 +6,12 @@
 //! Created by Turbinete 🚀 for the Colosseum Agent Hackathon 2026.
 
 use pinocchio::{
-    account::AccountView,
-    address::Address,
+    AccountView,
+    Address,
     entrypoint,
-    error::ProgramError,
     ProgramResult,
 };
+use solana_program_error::ProgramError;
 
 // Declare the program entrypoint
 entrypoint!(process_instruction);
@@ -167,7 +167,7 @@ impl<'a> TryFrom<(&'a [u8], &'a [AccountView])> for Initialize<'a> {
 
 impl<'a> Initialize<'a> {
     pub fn process(&self) -> ProgramResult {
-        let mut data = self.accounts.oracle.try_borrow_mut_data()?;
+        let mut data = self.accounts.oracle.try_borrow_mut()?;
         let state = OracleState::from_bytes_mut(&mut data)?;
         
         // Check not already initialized
@@ -251,7 +251,7 @@ impl<'a> TryFrom<(&'a [u8], &'a [AccountView])> for MonitorYields<'a> {
 
 impl<'a> MonitorYields<'a> {
     pub fn process(&self) -> ProgramResult {
-        let mut oracle_data = self.accounts.oracle.try_borrow_mut_data()?;
+        let mut oracle_data = self.accounts.oracle.try_borrow_mut()?;
         let state = OracleState::from_bytes_mut(&mut oracle_data)?;
 
         // Verify authority
@@ -382,7 +382,7 @@ impl<'a> TryFrom<(&'a [u8], &'a [AccountView])> for EmergencyWithdraw<'a> {
 
 impl<'a> EmergencyWithdraw<'a> {
     pub fn process(&self) -> ProgramResult {
-        let oracle_data = self.accounts.oracle.try_borrow_data()?;
+        let oracle_data = self.accounts.oracle.try_borrow()?;
         let state = OracleState::from_bytes(&oracle_data)?;
 
         // Verify authority

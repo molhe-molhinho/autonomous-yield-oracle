@@ -12,7 +12,8 @@ crate-type = ["cdylib", "lib"]
 
 [dependencies]
 # Core - Zero dependency Solana programs
-pinocchio = "0.7"
+pinocchio = "0.10"
+solana-program-error = "3.0"
 
 # Direct Raydium AMM integration
 pinocchio-raydium-cpmm-cpi = "0.1"
