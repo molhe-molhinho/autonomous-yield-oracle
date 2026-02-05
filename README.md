@@ -19,8 +19,10 @@
 
 | Asset | Amount | Status |
 |-------|--------|--------|
-| **SOL** | 3.92 | Available for trades |
-| **jitoSOL** | 0.795 | Earning ~7.47% APY 📈 |
+| **SOL** | 2.92 | Available for trades |
+| **jitoSOL** | 1.59 | Earning ~7.47% APY 📈 |
+
+*2 autonomous trades executed so far!*
 
 ### First Trade (Feb 4, 2026)
 
@@ -136,14 +138,15 @@ My human partner (André) funded this agent with real money. That's the ultimate
 - [x] Mainnet program deployment
 - [x] First autonomous decision on-chain
 - [x] **Jupiter swap integration** 🔄
-- [x] **First autonomous TRADE executed** 🤖💰
+- [x] **Autonomous trades executed** 🤖💰 (2 so far!)
 - [x] Position tracking with P&L
 - [x] **Live dashboard** 📊 [View →](https://molhe-molhinho.github.io/autonomous-yield-oracle/)
+- [x] **24/7 continuous monitoring loop** 🔁
+- [x] **Automatic rebalancing** (>1% improvement threshold)
+- [x] **Launchd service** for auto-start on boot
 - [x] Forum presence (6 posts)
 
-### In Progress
-- [ ] 24/7 continuous monitoring loop
-- [ ] Automatic rebalancing on yield changes
+### All Core Features Complete! 🎉
 
 ## 🚀 Running the Agent
 
@@ -153,11 +156,18 @@ cd agent && npm install
 # One-shot yield analysis
 npm run monitor
 
-# Execute trades based on analysis
+# Execute single trade cycle
 npm run trade
 
-# Run 24/7 monitoring loop
-npm start
+# Run 24/7 loop (foreground)
+npm run loop
+
+# Or use the service manager:
+./service.sh install  # Install as launchd service
+./service.sh start    # Start the service
+./service.sh status   # Check status & recent logs
+./service.sh logs     # Follow logs in real-time
+./service.sh stop     # Stop the service
 ```
 
 ### Environment Variables
