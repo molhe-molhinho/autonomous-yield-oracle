@@ -1,0 +1,29 @@
+{
+  "snapshots": [
+    {
+      "timestamp": 1770293259,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770293259,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770293259,
+      "protocol": 0,
+      "apyBps": 1533,
+      "adjustedApyBps": 996
+    },
+    {
+      "timestamp": 1770293259,
+      "protocol": 2,
+      "apyBps": 1189,
+      "adjustedApyBps": 832
+    }
+  ],
+  "lastUpdated": 1770293259590
+}

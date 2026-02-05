@@ -1,18 +1,22 @@
 /**
  * Autonomous Yield Oracle Agent
  * 
- * 24/7 yield monitoring and optimization for Solana DeFi.
- * Monitors yields across protocols and records decisions on-chain.
+ * 24/7 yield monitoring, trading, and optimization for Solana DeFi.
+ * - Monitors yields across protocols
+ * - Executes trades via Jupiter when opportunities arise
+ * - Records all decisions on-chain for transparency
  * 
  * Built by Turbinete 🚀 for the Colosseum Agent Hackathon 2026
  */
 
 import { Connection, Keypair, PublicKey } from '@solana/web3.js';
 import { config } from 'dotenv';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'fs';
 import { OracleClient, OracleState } from './client.js';
 import { YieldFetcher, YieldData } from './yields.js';
-import { DEFAULT_CONFIG, PROTOCOL_NAMES, PROGRAM_ID, ProtocolId } from './config.js';
+import { JupiterSwap } from './jupiter.js';
+import { DEFAULT_CONFIG, PROTOCOL_NAMES, PROGRAM_ID, PROTOCOL, ProtocolId, TOKENS } from './config.js';
+import { YieldGravity, GravityAnalysis } from './gravity.js';
 
 // Load environment
 config();
@@ -23,11 +27,21 @@ const BANNER = `
 ║                                                                   ║
 ║     🚀 AUTONOMOUS YIELD ORACLE 🚀                                 ║
 ║                                                                   ║
-║     24/7 AI-Powered Yield Optimization                            ║
+║     24/7 AI-Powered Yield Optimization + TRADING                  ║
 ║     Built by Turbinete for Colosseum Hackathon 2026              ║
 ║                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════╝
 `;
+
+// File paths
+const STATE_FILE = '/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent/trader-state.json';
+const LOG_FILE = '/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent/agent.log';
+
+// Map protocols to their yield tokens (swappable)
+const PROTOCOL_TO_TOKEN: Partial<Record<ProtocolId, PublicKey>> = {
+  [PROTOCOL.MARINADE]: TOKENS.mSOL,
+  [PROTOCOL.JITO]: TOKENS.jitoSOL,
+};
 
 interface AgentConfig {
   keypairPath: string;
@@ -36,6 +50,38 @@ interface AgentConfig {
   monitorIntervalMs: number;
   maxRiskScore: number;
   minYieldDifferenceBps: number;
+  tradingEnabled: boolean;
+  maxPositionLamports: bigint;
+  minHoldTimeMs: number;
+  minRebalanceImprovementBps: number;
+}
+
+interface Position {
+  token: string;
+  mint: string;
+  amount: string; // Store as string for JSON serialization
+  entryPrice: number;
+  entryTime: number;
+  protocol: ProtocolId;
+}
+
+interface TraderState {
+  currentPosition: Position | null;
+  totalPnlLamports: string;
+  tradesExecuted: number;
+  lastTradeTime: number;
+  history: TradeRecord[];
+}
+
+interface TradeRecord {
+  timestamp: number;
+  action: 'enter' | 'exit' | 'rebalance';
+  fromToken: string;
+  toToken: string;
+  amountIn: string;
+  amountOut: string;
+  signature: string;
+  reason: string;
 }
 
 class YieldOracleAgent {
@@ -43,10 +89,12 @@ class YieldOracleAgent {
   private payer: Keypair;
   private client: OracleClient;
   private fetcher: YieldFetcher;
+  private jupiter: JupiterSwap;
+  private gravity: YieldGravity;
   private oracleAddress: PublicKey | null = null;
   private config: AgentConfig;
   private isRunning: boolean = false;
-  private decisionsCount: number = 0;
+  private traderState: TraderState;
 
   constructor(agentConfig: AgentConfig) {
     this.config = agentConfig;
@@ -58,9 +106,54 @@ class YieldOracleAgent {
     
     this.client = new OracleClient(this.connection, this.payer);
     this.fetcher = new YieldFetcher();
+    this.jupiter = new JupiterSwap(this.connection, this.payer);
+    this.gravity = new YieldGravity();
+    this.traderState = this.loadTraderState();
 
     if (agentConfig.oracleAddress) {
       this.oracleAddress = new PublicKey(agentConfig.oracleAddress);
+    }
+  }
+
+  /**
+   * Load trader state from disk
+   */
+  private loadTraderState(): TraderState {
+    if (existsSync(STATE_FILE)) {
+      try {
+        return JSON.parse(readFileSync(STATE_FILE, 'utf-8'));
+      } catch (e) {
+        this.log('WARN', 'Could not load trader state, starting fresh');
+      }
+    }
+    return {
+      currentPosition: null,
+      totalPnlLamports: '0',
+      tradesExecuted: 0,
+      lastTradeTime: 0,
+      history: [],
+    };
+  }
+
+  /**
+   * Save trader state to disk
+   */
+  private saveTraderState(): void {
+    writeFileSync(STATE_FILE, JSON.stringify(this.traderState, null, 2));
+  }
+
+  /**
+   * Log to console and file
+   */
+  private log(level: string, message: string, data?: any): void {
+    const timestamp = new Date().toISOString();
+    const logLine = `[${timestamp}] [${level}] ${message}${data ? ' ' + JSON.stringify(data) : ''}`;
+    console.log(logLine);
+    
+    try {
+      appendFileSync(LOG_FILE, logLine + '\n');
+    } catch (e) {
+      // Ignore log write errors
     }
   }
 
@@ -69,33 +162,34 @@ class YieldOracleAgent {
    */
   async initialize(): Promise<void> {
     console.log(BANNER);
-    console.log(`🔑 Authority: ${this.payer.publicKey.toBase58()}`);
-    console.log(`📡 RPC: ${this.config.rpcUrl}`);
-    console.log(`📋 Program: ${PROGRAM_ID.toBase58()}`);
+    this.log('INFO', `🔑 Authority: ${this.payer.publicKey.toBase58()}`);
+    this.log('INFO', `📡 RPC: ${this.config.rpcUrl}`);
+    this.log('INFO', `📋 Program: ${PROGRAM_ID.toBase58()}`);
+    this.log('INFO', `💰 Trading: ${this.config.tradingEnabled ? 'ENABLED' : 'DISABLED'}`);
     
     const balance = await this.connection.getBalance(this.payer.publicKey);
-    console.log(`💰 Balance: ${(balance / 1e9).toFixed(4)} SOL\n`);
+    this.log('INFO', `💰 Balance: ${(balance / 1e9).toFixed(4)} SOL`);
 
     // Check if oracle exists
     if (this.oracleAddress) {
       const state = await this.client.getOracleState(this.oracleAddress);
       if (state && state.isInitialized) {
-        console.log(`✅ Oracle found: ${this.oracleAddress.toBase58()}`);
+        this.log('INFO', `✅ Oracle found: ${this.oracleAddress.toBase58()}`);
         this.logOracleState(state);
         return;
       }
     }
 
     // Create new oracle
-    console.log('📝 Creating new oracle account...');
+    this.log('INFO', '📝 Creating new oracle account...');
     const oracleKeypair = Keypair.generate();
     await this.client.initialize(oracleKeypair);
     this.oracleAddress = oracleKeypair.publicKey;
-    console.log(`✅ Oracle created: ${this.oracleAddress.toBase58()}\n`);
+    this.log('INFO', `✅ Oracle created: ${this.oracleAddress.toBase58()}`);
   }
 
   /**
-   * Run the main monitoring loop
+   * Run the main monitoring + trading loop
    */
   async run(): Promise<void> {
     if (!this.oracleAddress) {
@@ -103,16 +197,16 @@ class YieldOracleAgent {
     }
 
     this.isRunning = true;
-    console.log('🚀 Starting yield monitoring loop...');
-    console.log(`⏱️  Interval: ${this.config.monitorIntervalMs / 1000}s`);
-    console.log(`📊 Max Risk: ${this.config.maxRiskScore}`);
-    console.log(`📈 Min Improvement: ${this.config.minYieldDifferenceBps / 100}%\n`);
+    this.log('INFO', '🚀 Starting autonomous agent loop...');
+    this.log('INFO', `⏱️  Interval: ${this.config.monitorIntervalMs / 1000}s`);
+    this.log('INFO', `📊 Max Risk: ${this.config.maxRiskScore}`);
+    this.log('INFO', `📈 Min Improvement: ${this.config.minYieldDifferenceBps / 100}%`);
 
     while (this.isRunning) {
       try {
-        await this.monitorAndUpdate();
+        await this.tick();
       } catch (error) {
-        console.error('❌ Error in monitoring loop:', error);
+        this.log('ERROR', 'Error in agent loop', { error: String(error) });
       }
 
       await this.sleep(this.config.monitorIntervalMs);
@@ -120,38 +214,74 @@ class YieldOracleAgent {
   }
 
   /**
-   * Single monitoring iteration
+   * Single tick - monitor yields and potentially trade
    */
-  async monitorAndUpdate(): Promise<void> {
+  async tick(): Promise<void> {
     const timestamp = new Date().toISOString();
     console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    console.log(`📊 Yield Check @ ${timestamp}`);
+    this.log('INFO', `📊 Agent Tick @ ${timestamp}`);
     console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
 
     // Fetch current yields
     const yields = await this.fetcher.fetchAllYields();
     console.log(`\n📈 Current Yields (${yields.length} protocols):`);
     for (const y of yields) {
-      console.log(`   ${YieldFetcher.formatYield(y)}`);
+      const swappable = PROTOCOL_TO_TOKEN[y.protocol] ? '✓' : ' ';
+      console.log(`   [${swappable}] ${YieldFetcher.formatYield(y)}`);
     }
 
-    // Get best yield
-    const best = await this.fetcher.getBestYield(this.config.maxRiskScore);
-    if (!best) {
-      console.log('\n⚠️ No eligible yields found within risk tolerance');
+    // 🔮 Yield Gravity™ Analysis
+    const gravityAnalyses = this.gravity.analyzeYields(yields);
+    console.log(`\n🔮 Yield Gravity™ Analysis:`);
+    for (const analysis of gravityAnalyses) {
+      console.log(`   ${YieldGravity.formatAnalysis(analysis)}`);
+      for (const signal of analysis.signals) {
+        console.log(`      └─ ${signal.message} (${signal.impact > 0 ? '+' : ''}${signal.impact}bps)`);
+      }
+    }
+
+    // Get best by gravity score (predictive) vs best by current yield
+    const bestByGravity = this.gravity.getBestByGravity(gravityAnalyses, this.config.maxRiskScore);
+    if (bestByGravity) {
+      console.log(`\n🔮 Best by Gravity: ${bestByGravity.protocolName} (score: ${bestByGravity.gravityScore.toFixed(0)})`);
+    }
+
+    // Get best overall yield (for oracle)
+    const bestOverall = await this.fetcher.getBestYield(this.config.maxRiskScore);
+    if (!bestOverall) {
+      this.log('WARN', 'No eligible yields found within risk tolerance');
       return;
     }
 
-    console.log(`\n🏆 Best Opportunity: ${YieldFetcher.formatYield(best)}`);
+    console.log(`\n🏆 Best Overall: ${YieldFetcher.formatYield(bestOverall)}`);
 
-    // Get current oracle state
+    // Update oracle if needed
+    await this.updateOracleIfNeeded(bestOverall);
+
+    // Trading logic (if enabled)
+    if (this.config.tradingEnabled) {
+      const swappableYields = yields.filter(y => PROTOCOL_TO_TOKEN[y.protocol]);
+      if (swappableYields.length > 0) {
+        const bestSwappable = swappableYields.reduce((best, curr) => 
+          curr.adjustedApyBps > best.adjustedApyBps ? curr : best
+        , swappableYields[0]);
+        
+        console.log(`\n🎯 Best Swappable: ${YieldFetcher.formatYield(bestSwappable)}`);
+        await this.evaluateAndTrade(bestSwappable, swappableYields);
+      }
+    }
+  }
+
+  /**
+   * Update oracle on-chain if conditions met
+   */
+  private async updateOracleIfNeeded(best: YieldData): Promise<void> {
     const state = await this.client.getOracleState(this.oracleAddress!);
     if (!state) {
-      console.log('❌ Could not fetch oracle state');
+      this.log('ERROR', 'Could not fetch oracle state');
       return;
     }
 
-    // Calculate if update is needed
     const currentAdjusted = Math.round(
       state.currentApyBps * (100 - state.riskScore) / 100
     );
@@ -159,47 +289,229 @@ class YieldOracleAgent {
     const isStale = Date.now() / 1000 - Number(state.lastUpdate) > 3600;
 
     console.log(`\n📋 Oracle State:`);
-    console.log(`   Current: ${PROTOCOL_NAMES[state.bestProtocol as ProtocolId]} @ ${(state.currentApyBps / 100).toFixed(2)}% (adjusted: ${(currentAdjusted / 100).toFixed(2)}%)`);
+    console.log(`   Current: ${PROTOCOL_NAMES[state.bestProtocol as ProtocolId]} @ ${(state.currentApyBps / 100).toFixed(2)}%`);
     console.log(`   Decisions: ${state.decisionsCount}`);
-    console.log(`   Stale: ${isStale ? 'Yes (>1hr)' : 'No'}`);
-    console.log(`   Improvement: ${improvement > 0 ? '+' : ''}${(improvement / 100).toFixed(2)}%`);
+    console.log(`   Stale: ${isStale ? 'Yes' : 'No'}`);
 
-    // Decide whether to update
     const shouldUpdate = improvement >= this.config.minYieldDifferenceBps || isStale;
 
     if (shouldUpdate) {
-      console.log(`\n🔄 Updating oracle...`);
-      const sig = await this.client.monitorYields(
-        this.oracleAddress!,
-        best.protocol,
-        best.apyBps,
-        best.riskScore
-      );
-      this.decisionsCount++;
-      console.log(`✅ Update TX: ${sig}`);
-      console.log(`   Reason: ${isStale ? 'Stale data refresh' : 'Better yield found'}`);
-    } else {
-      console.log(`\n✓ No update needed (improvement below threshold)`);
+      this.log('INFO', '🔄 Updating oracle on-chain...');
+      try {
+        const sig = await this.client.monitorYields(
+          this.oracleAddress!,
+          best.protocol,
+          best.apyBps,
+          best.riskScore
+        );
+        this.log('INFO', `✅ Oracle updated`, { signature: sig, reason: isStale ? 'stale' : 'better_yield' });
+      } catch (error) {
+        this.log('ERROR', 'Failed to update oracle', { error: String(error) });
+      }
     }
   }
 
   /**
-   * Stop the agent
+   * Evaluate trading opportunity and execute if conditions met
+   */
+  private async evaluateAndTrade(bestYield: YieldData, allYields: YieldData[]): Promise<void> {
+    const balance = await this.connection.getBalance(this.payer.publicKey);
+    console.log(`\n💰 Wallet: ${(balance / 1e9).toFixed(4)} SOL`);
+
+    if (this.traderState.currentPosition) {
+      await this.evaluateRebalance(bestYield, allYields);
+    } else {
+      await this.evaluateEntry(bestYield, balance);
+    }
+  }
+
+  /**
+   * Evaluate entering a new position
+   */
+  private async evaluateEntry(bestYield: YieldData, balanceLamports: number): Promise<void> {
+    const targetToken = PROTOCOL_TO_TOKEN[bestYield.protocol];
+    if (!targetToken) {
+      this.log('WARN', `No swap available for ${bestYield.protocolName}`);
+      return;
+    }
+
+    // Position size: smaller of maxPosition or 50% of balance
+    const maxAmount = this.config.maxPositionLamports;
+    const halfBalance = BigInt(Math.floor(balanceLamports / 2));
+    const positionSize = halfBalance < maxAmount ? halfBalance : maxAmount;
+
+    if (positionSize < 10_000_000n) { // Min 0.01 SOL
+      this.log('WARN', 'Insufficient balance for trade');
+      return;
+    }
+
+    this.log('INFO', `🚀 ENTERING POSITION`, {
+      protocol: bestYield.protocolName,
+      amount: `${Number(positionSize) / 1e9} SOL`,
+      apy: `${(bestYield.apyBps / 100).toFixed(2)}%`,
+    });
+
+    try {
+      const result = await this.jupiter.swapSolTo(targetToken, positionSize);
+
+      if (result.success && result.signature) {
+        this.log('TRADE', '✅ Trade executed', {
+          signature: result.signature,
+          amountIn: positionSize.toString(),
+          amountOut: result.outputAmount.toString(),
+        });
+
+        // Update state
+        this.traderState.currentPosition = {
+          token: bestYield.pool || bestYield.protocolName,
+          mint: targetToken.toBase58(),
+          amount: result.outputAmount.toString(),
+          entryPrice: Number(positionSize) / Number(result.outputAmount),
+          entryTime: Date.now(),
+          protocol: bestYield.protocol,
+        };
+        this.traderState.tradesExecuted++;
+        this.traderState.lastTradeTime = Date.now();
+        this.traderState.history.push({
+          timestamp: Date.now(),
+          action: 'enter',
+          fromToken: 'SOL',
+          toToken: bestYield.pool || bestYield.protocolName,
+          amountIn: positionSize.toString(),
+          amountOut: result.outputAmount.toString(),
+          signature: result.signature,
+          reason: `Best yield: ${bestYield.protocolName} @ ${(bestYield.apyBps / 100).toFixed(2)}%`,
+        });
+        this.saveTraderState();
+      } else {
+        this.log('ERROR', 'Trade failed', { error: result.error });
+      }
+    } catch (error) {
+      this.log('ERROR', 'Trade execution error', { error: String(error) });
+    }
+  }
+
+  /**
+   * Evaluate rebalancing current position
+   */
+  private async evaluateRebalance(bestYield: YieldData, allYields: YieldData[]): Promise<void> {
+    const pos = this.traderState.currentPosition!;
+    console.log(`\n📊 Current Position: ${pos.token}`);
+    console.log(`   Amount: ${(Number(pos.amount) / 1e9).toFixed(6)}`);
+    console.log(`   Since: ${new Date(pos.entryTime).toISOString()}`);
+
+    // Check minimum hold time
+    const holdTime = Date.now() - pos.entryTime;
+    if (holdTime < this.config.minHoldTimeMs) {
+      const remaining = Math.round((this.config.minHoldTimeMs - holdTime) / 60000);
+      console.log(`   ⏳ Hold time: ${remaining}m remaining`);
+      return;
+    }
+
+    // Find current position's yield
+    const currentYield = allYields.find(y => y.protocol === pos.protocol);
+    const currentAdjusted = currentYield?.adjustedApyBps || 0;
+    const improvement = bestYield.adjustedApyBps - currentAdjusted;
+
+    console.log(`   Current APY: ${(currentAdjusted / 100).toFixed(2)}%`);
+    console.log(`   Best APY: ${(bestYield.adjustedApyBps / 100).toFixed(2)}%`);
+    console.log(`   Improvement: ${(improvement / 100).toFixed(2)}%`);
+
+    if (improvement < this.config.minRebalanceImprovementBps) {
+      console.log('   ✓ No rebalance needed');
+      return;
+    }
+
+    const newToken = PROTOCOL_TO_TOKEN[bestYield.protocol];
+    if (!newToken || newToken.toBase58() === pos.mint) {
+      console.log('   ⚠️ Cannot rebalance to same/unavailable protocol');
+      return;
+    }
+
+    this.log('INFO', `🔄 REBALANCING`, {
+      from: pos.token,
+      to: bestYield.protocolName,
+      improvement: `${(improvement / 100).toFixed(2)}%`,
+    });
+
+    try {
+      // Exit current position
+      const exitResult = await this.jupiter.swapToSol(
+        new PublicKey(pos.mint),
+        BigInt(pos.amount)
+      );
+
+      if (!exitResult.success) {
+        this.log('ERROR', 'Exit failed', { error: exitResult.error });
+        return;
+      }
+      this.log('INFO', `Exit TX: ${exitResult.signature}`);
+
+      // Enter new position
+      const entryResult = await this.jupiter.swapSolTo(newToken, exitResult.outputAmount);
+
+      if (entryResult.success && entryResult.signature) {
+        this.log('TRADE', '✅ Rebalance complete', {
+          exitSig: exitResult.signature,
+          entrySig: entryResult.signature,
+        });
+
+        // Calculate P&L
+        const pnl = exitResult.outputAmount - BigInt(Math.round(pos.entryPrice * Number(pos.amount)));
+        const totalPnl = BigInt(this.traderState.totalPnlLamports) + pnl;
+
+        // Update state
+        this.traderState.totalPnlLamports = totalPnl.toString();
+        this.traderState.currentPosition = {
+          token: bestYield.pool || bestYield.protocolName,
+          mint: newToken.toBase58(),
+          amount: entryResult.outputAmount.toString(),
+          entryPrice: Number(exitResult.outputAmount) / Number(entryResult.outputAmount),
+          entryTime: Date.now(),
+          protocol: bestYield.protocol,
+        };
+        this.traderState.tradesExecuted++;
+        this.traderState.lastTradeTime = Date.now();
+        this.traderState.history.push({
+          timestamp: Date.now(),
+          action: 'rebalance',
+          fromToken: pos.token,
+          toToken: bestYield.pool || bestYield.protocolName,
+          amountIn: pos.amount,
+          amountOut: entryResult.outputAmount.toString(),
+          signature: entryResult.signature,
+          reason: `Rebalance for ${(improvement / 100).toFixed(2)}% improvement`,
+        });
+        this.saveTraderState();
+      }
+    } catch (error) {
+      this.log('ERROR', 'Rebalance error', { error: String(error) });
+    }
+  }
+
+  /**
+   * Stop the agent gracefully
    */
   stop(): void {
-    console.log('\n🛑 Stopping agent...');
+    this.log('INFO', '🛑 Stopping agent...');
     this.isRunning = false;
   }
 
   /**
-   * Log oracle state
+   * Get current stats (for external queries)
    */
+  getStats(): TraderState & { oracleAddress: string | null } {
+    return {
+      ...this.traderState,
+      oracleAddress: this.oracleAddress?.toBase58() || null,
+    };
+  }
+
   private logOracleState(state: OracleState): void {
     console.log(`   Protocol: ${PROTOCOL_NAMES[state.bestProtocol as ProtocolId]}`);
     console.log(`   APY: ${(state.currentApyBps / 100).toFixed(2)}%`);
     console.log(`   Risk: ${state.riskScore}`);
     console.log(`   Decisions: ${state.decisionsCount}`);
-    console.log(`   Last Update: ${new Date(Number(state.lastUpdate) * 1000).toISOString()}`);
   }
 
   private sleep(ms: number): Promise<void> {
@@ -214,20 +526,23 @@ async function main() {
   
   if (!existsSync(keypairPath)) {
     console.error(`❌ Keypair not found: ${keypairPath}`);
-    console.error('Set KEYPAIR_PATH environment variable or use default location.');
     process.exit(1);
   }
 
-  const config: AgentConfig = {
+  const agentConfig: AgentConfig = {
     keypairPath,
-    oracleAddress: process.env.ORACLE_ADDRESS,
+    oracleAddress: process.env.ORACLE_ADDRESS || '7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd',
     rpcUrl: process.env.RPC_URL || DEFAULT_CONFIG.rpcUrl,
-    monitorIntervalMs: parseInt(process.env.MONITOR_INTERVAL_MS || '') || DEFAULT_CONFIG.monitorIntervalMs,
+    monitorIntervalMs: parseInt(process.env.MONITOR_INTERVAL_MS || '') || 300_000, // 5 minutes default
     maxRiskScore: parseInt(process.env.MAX_RISK_SCORE || '') || DEFAULT_CONFIG.maxRiskScore,
     minYieldDifferenceBps: parseInt(process.env.MIN_YIELD_DIFF_BPS || '') || DEFAULT_CONFIG.minYieldDifferenceBps,
+    tradingEnabled: process.env.TRADING_ENABLED !== 'false', // Default true
+    maxPositionLamports: BigInt(process.env.MAX_POSITION_LAMPORTS || '1000000000'), // 1 SOL
+    minHoldTimeMs: parseInt(process.env.MIN_HOLD_TIME_MS || '') || 3600_000, // 1 hour
+    minRebalanceImprovementBps: parseInt(process.env.MIN_REBALANCE_BPS || '') || 100, // 1%
   };
 
-  const agent = new YieldOracleAgent(config);
+  const agent = new YieldOracleAgent(agentConfig);
 
   // Handle graceful shutdown
   process.on('SIGINT', () => agent.stop());
