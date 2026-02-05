@@ -1,0 +1,17 @@
+[2026-02-05T07:13:44.066Z] [INFO] ═══════════════════════════════════════════════════════
+[2026-02-05T07:13:44.067Z] [INFO] 🚀 AUTONOMOUS YIELD ORACLE - 24/7 LOOP STARTING
+[2026-02-05T07:13:44.067Z] [INFO] ═══════════════════════════════════════════════════════
+[2026-02-05T07:13:44.067Z] [INFO] Wallet: 3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W
+[2026-02-05T07:13:44.067Z] [INFO] Oracle: 7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd
+[2026-02-05T07:13:44.067Z] [INFO] Interval: 300s
+[2026-02-05T07:13:44.067Z] [INFO] Min rebalance improvement: 1%
+[2026-02-05T07:13:44.389Z] [INFO] Balance: 3.9172 SOL
+[2026-02-05T07:13:44.390Z] [INFO] ═══════════════════════════════════════════════════════
+[2026-02-05T07:13:44.390Z] [INFO] ━━━ Cycle #1 ━━━
+[2026-02-05T07:13:44.823Z] [INFO] Best yield: Jito @ 7.62% (adj: 6.25%)
+[2026-02-05T07:13:44.872Z] [INFO] 🎯 ENTERING POSITION: Jito
+[2026-02-05T07:13:44.873Z] [INFO]    Amount: 1 SOL
+[2026-02-05T07:13:44.873Z] [INFO]    Expected APY: 7.62%
+[2026-02-05T07:13:45.588Z] [INFO] ✅ TRADE EXECUTED: Q6JWCK9DD28T7g7rBxjFKHdQV7NCqEki1dS2n77qRJq7PNT4x8MetSSpdbEbVYqwQMfMwBRDAK54n4Q7wLt5Q3k
+[2026-02-05T07:13:45.589Z] [TRADE] {"timestamp":1770275625589,"action":"enter","fromToken":"SOL","toToken":"jitoSOL","amountIn":"1000000000","amountOut":"795430135","signature":"Q6JWCK9DD28T7g7rBxjFKHdQV7NCqEki1dS2n77qRJq7PNT4x8MetSSpdbEbVYqwQMfMwBRDAK54n4Q7wLt5Q3k","reason":"Best yield: Jito @ 7.62%"}
+[2026-02-05T07:13:47.521Z] [INFO] 📝 On-chain: 2XxK4d2tTSxU2sCY8jJo...

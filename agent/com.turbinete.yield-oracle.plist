@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.turbinete.yield-oracle</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/npx</string>
+        <string>tsx</string>
+        <string>/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent/src/loop.ts</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>ORACLE_ADDRESS</key>
+        <string>7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd</string>
+        <key>KEYPAIR_PATH</key>
+        <string>/Users/molhemolinho/.config/solana/turbinete-wallet.json</string>
+    </dict>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent/logs/launchd-stdout.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/molhemolinho/clawd/projects/autonomous-yield-oracle/agent/logs/launchd-stderr.log</string>
+    
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+</dict>
+</plist>

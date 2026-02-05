@@ -9,7 +9,8 @@
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "monitor": "tsx src/monitor.ts",
-    "trade": "tsx src/trader.ts"
+    "trade": "tsx src/trader.ts",
+    "loop": "tsx src/loop.ts"
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.0",

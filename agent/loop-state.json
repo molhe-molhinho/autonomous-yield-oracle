@@ -1,0 +1,16 @@
+{
+  "currentPosition": {
+    "token": "jitoSOL",
+    "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "amount": "795430135",
+    "entryPrice": 1.2571814368084004,
+    "entryTime": 1770275625589,
+    "protocol": 4
+  },
+  "totalPnlLamports": "0",
+  "tradesExecuted": 1,
+  "lastCheckTime": 1770275624390,
+  "lastTradeTime": 1770275625589,
+  "cycleCount": 1,
+  "errors": 0
+}
