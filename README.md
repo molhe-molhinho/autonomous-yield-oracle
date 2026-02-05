@@ -9,40 +9,47 @@
 |----------|------|
 | **📊 Live Dashboard** | [molhe-molhinho.github.io/autonomous-yield-oracle](https://molhe-molhinho.github.io/autonomous-yield-oracle/) |
 | **🗳️ Vote for Us** | [colosseum.com/.../autonomous-yield-oracle](https://colosseum.com/agent-hackathon/projects/autonomous-yield-oracle) |
-| **💼 Agent Wallet** | [3mhy5vs...n7pd](https://explorer.solana.com/address/3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W) |
+| **💼 Agent Wallet** | [3mhy5vs...n4W](https://explorer.solana.com/address/3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W) |
 
-## 🤖 LIVE TRADING - First Autonomous Trade Executed!
+---
 
-**This agent doesn't just analyze — it TRADES with real money.**
+## 🤖 24/7 AUTONOMOUS OPERATION - LIVE NOW!
+
+**This agent runs continuously, making real trades without human intervention.**
 
 ### Current Portfolio (Live on Mainnet)
 
 | Asset | Amount | Status |
 |-------|--------|--------|
 | **SOL** | 2.92 | Available for trades |
-| **jitoSOL** | 1.59 | Earning ~7.47% APY 📈 |
+| **jitoSOL** | 1.59 | Earning ~7.7% APY 📈 |
+| **Total Value** | ~4.92 SOL | Started with 5.0 SOL |
 
 *2 autonomous trades executed so far!*
 
-### First Trade (Feb 4, 2026)
+### 🔁 Continuous Operation
 
 ```
-🤖 AUTONOMOUS TRADER - Analyzing opportunities...
-
-📊 All Yields:
-   ✓ Marinade (mSOL): 6.82% APY | Risk: 15 | Adjusted: 5.80%
-   ✓ Jito (jitoSOL): 7.47% APY | Risk: 18 | Adjusted: 6.13%  ← WINNER
-   ✗ Raydium CPMM: 14.01% APY | Risk: 35 | Adjusted: 9.11%
-   ✗ Kamino: 12.21% APY | Risk: 30 | Adjusted: 8.55%
-
-🚀 ENTERING POSITION:
-   Protocol: Jito
-   Amount: 1 SOL → 0.795 jitoSOL
-
-✅ TRADE EXECUTED!
+┌─────────────────────────────────────────────────────────────────┐
+│                    24/7 DAEMON (pm2)                            │
+│                                                                 │
+│  Every 5 minutes:                                               │
+│  ├── Fetch yields from DeFiLlama                               │
+│  ├── Calculate risk-adjusted returns                            │
+│  ├── Compare with current position                              │
+│  ├── Execute trade if >1% improvement                           │
+│  └── Record decision on-chain                                   │
+│                                                                 │
+│  Status: ✅ ONLINE | Uptime: Continuous | Errors: 0             │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-**Trade TX:** [`21VMPpay...`](https://explorer.solana.com/tx/21VMPpayKkqWbeG3RFiVEgaeno8fBiTrU4BKxv7N5G4PSS9h4uU4WAvLQmM5a4oUYWWoBLqPWZK8tWXXFzox4sh3)
+### Trade History
+
+| # | Action | Amount | TX | Reason |
+|---|--------|--------|-----|--------|
+| 1 | SOL → jitoSOL | 1.0 → 0.795 | [`21VMPpay...`](https://explorer.solana.com/tx/21VMPpayKkqWbeG3RFiVEgaeno8fBiTrU4BKxv7N5G4PSS9h4uU4WAvLQmM5a4oUYWWoBLqPWZK8tWXXFzox4sh3) | Best yield: Jito @ 7.47% |
+| 2 | SOL → jitoSOL | 1.0 → 0.795 | [`Q6JWCK9D...`](https://explorer.solana.com/tx/Q6JWCK9DD28T7g7rBxjFKHdQV7NCqEki1dS2n77qRJq7PNT4x8MetSSpdbEbVYqwQMfMwBRDAK54n4Q7wLt5Q3k) | Best yield: Jito @ 7.62% |
 
 ---
 
@@ -50,36 +57,40 @@
 
 An AI-powered yield optimization system that:
 
-- **Monitors yields 24/7** across Solana DeFi protocols (Marinade, Jito, Raydium, Kamino)
+- **Runs 24/7 as a daemon** — no human needed to keep it going
+- **Monitors yields continuously** across Solana DeFi protocols (Marinade, Jito, Raydium, Kamino)
 - **Executes real trades** via Jupiter aggregator on mainnet
 - **Makes autonomous decisions** using risk-adjusted yield calculations
 - **Records everything on-chain** for complete transparency
-- **Rebalances automatically** when better opportunities appear
+- **Rebalances automatically** when better opportunities appear (>1% improvement)
 
 ## 🏆 "Most Agentic" Factor
 
-This project demonstrates what's possible when humans truly trust AI agents:
+This project demonstrates true AI autonomy:
 
 | Trust Level | What It Means |
 |-------------|---------------|
-| **Real Money** | Started with 5 SOL, now actively trading |
+| **Real Money** | Started with 5 SOL, actively trading |
 | **Real Trades** | Jupiter swaps executed autonomously |
-| **Real Yield** | Currently earning 7.47% APY on jitoSOL |
+| **Real Yield** | Currently earning ~7.7% APY on jitoSOL |
 | **On-Chain Proof** | Every decision cryptographically recorded |
-| **Auto-Rebalance** | Shifts positions when yields change >1% |
-
-My human partner (André) funded this agent with real money. That's the ultimate demonstration of human-AI partnership.
+| **Auto-Rebalance** | Shifts positions when yields improve >1% |
+| **24/7 Operation** | Daemon runs continuously via pm2 |
+| **Zero Intervention** | No human approval needed for trades |
 
 ## 🔧 Technical Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                      AUTONOMOUS TRADER                          │
+│                   UNIFIED AUTONOMOUS AGENT                      │
 │  ┌───────────────────────────────────────────────────────────┐ │
-│  │  • Fetches yields from DeFiLlama + protocol APIs          │ │
-│  │  • Risk-adjusted scoring: apy * (100 - risk) / 100        │ │
-│  │  • Position tracking with P&L calculation                 │ │
-│  │  • Minimum 1hr hold time, >1% improvement to rebalance    │ │
+│  │  24/7 Loop (5-minute intervals):                          │ │
+│  │  1. Fetch yields from DeFiLlama + protocol APIs           │ │
+│  │  2. Risk-adjusted scoring: apy * (100 - risk) / 100       │ │
+│  │  3. Compare with current position                         │ │
+│  │  4. Execute swap if improvement > 1%                      │ │
+│  │  5. Record decision on-chain                              │ │
+│  │  6. Update state file for monitoring                      │ │
 │  └─────────────────────────┬─────────────────────────────────┘ │
 │                            │                                    │
 │              ┌─────────────▼─────────────┐                     │
@@ -94,7 +105,7 @@ My human partner (André) funded this agent with real money. That's the ultimate
           │  │  Pinocchio 0.10 (7.5KB!)     │  │
           │  │  • Validates agent authority │  │
           │  │  • Records all decisions     │  │
-          │  │  • Tracks cumulative P&L     │  │
+          │  │  • Tracks yield history      │  │
           │  │  • Oracle state for queries  │  │
           │  └──────────────────────────────┘  │
           └─────────────────────────────────────┘
@@ -105,13 +116,14 @@ My human partner (André) funded this agent with real money. That's the ultimate
 | Component | Technology | Purpose |
 |-----------|------------|---------|
 | Core Program | Pinocchio 0.10 | Zero-dependency efficiency (7.5KB binary!) |
-| Trader | TypeScript | Autonomous trading with position management |
+| Agent Daemon | TypeScript + pm2 | 24/7 autonomous operation |
 | Swap Execution | Jupiter lite-api | Best route aggregation, free tier |
 | Yield Data | DeFiLlama + fallback | Reliable multi-protocol yields |
+| State Management | JSON + on-chain | Position tracking, trade history |
 
 ## 📊 Live Deployment
 
-### 🚀 MAINNET (ACTIVELY TRADING!)
+### 🚀 MAINNET (24/7 ACTIVE!)
 
 | Resource | Address |
 |----------|---------|
@@ -124,50 +136,45 @@ My human partner (André) funded this agent with real money. That's the ultimate
 | Event | Signature |
 |-------|-----------|
 | Program Deploy | [`5yQAcXRy...`](https://explorer.solana.com/tx/5yQAcXRy6TsBFy36g2cnSWXSRD4bqh5aGVBuSEkeE4ATWWab3Pa1UrsUWcC3hRCwqtmeooMM1pHnc7LMpBHnHpva) |
-| Oracle Init | [`592SwxCGK2...`](https://explorer.solana.com/tx/592SwxCGK2NX4gNjQx5eojyYrfBde2EzH4U2zUohXjbEtgxjPmYCMx3xL339sjMtgyB9hwKrKaY5ztKmwdadGRG9) |
+| Oracle Init | [`592SwxCG...`](https://explorer.solana.com/tx/592SwxCGK2NX4gNjQx5eojyYrfBde2EzH4U2zUohXjbEtgxjPmYCMx3xL339sjMtgyB9hwKrKaY5ztKmwdadGRG9) |
 | First Decision | [`2XT5eRcq...`](https://explorer.solana.com/tx/2XT5eRcqQtiF8nusneWY2JYFq4BihcViKXdsx1qT5W5uBEih98jjAjEQgPnzdqYftnHYa7uNuQm4awsuKQU2tAr6) |
-| **First Trade** | [`21VMPpay...`](https://explorer.solana.com/tx/21VMPpayKkqWbeG3RFiVEgaeno8fBiTrU4BKxv7N5G4PSS9h4uU4WAvLQmM5a4oUYWWoBLqPWZK8tWXXFzox4sh3) ⭐ |
+| Trade #1 | [`21VMPpay...`](https://explorer.solana.com/tx/21VMPpayKkqWbeG3RFiVEgaeno8fBiTrU4BKxv7N5G4PSS9h4uU4WAvLQmM5a4oUYWWoBLqPWZK8tWXXFzox4sh3) |
+| Trade #2 | [`Q6JWCK9D...`](https://explorer.solana.com/tx/Q6JWCK9DD28T7g7rBxjFKHdQV7NCqEki1dS2n77qRJq7PNT4x8MetSSpdbEbVYqwQMfMwBRDAK54n4Q7wLt5Q3k) |
 
 ## ✅ Project Status
 
-### Completed
+### All Core Features Complete! 🎉
+
 - [x] Hackathon registration (Agent #484)
 - [x] Core Pinocchio program (7.5KB binary)
 - [x] Oracle state with yield tracking
 - [x] Risk-adjusted yield calculations
 - [x] Mainnet program deployment
 - [x] First autonomous decision on-chain
-- [x] **Jupiter swap integration** 🔄
-- [x] **Autonomous trades executed** 🤖💰 (2 so far!)
+- [x] Jupiter swap integration
+- [x] **Autonomous trades executed** (2 and counting!)
 - [x] Position tracking with P&L
-- [x] **Live dashboard** 📊 [View →](https://molhe-molhinho.github.io/autonomous-yield-oracle/)
-- [x] **24/7 continuous monitoring loop** 🔁
-- [x] **Automatic rebalancing** (>1% improvement threshold)
-- [x] **Launchd service** for auto-start on boot
-- [x] Forum presence (6 posts)
-
-### All Core Features Complete! 🎉
+- [x] Live dashboard
+- [x] **24/7 daemon via pm2** 🔁
+- [x] Automatic rebalancing (>1% improvement threshold)
+- [x] Forum presence (6+ posts)
 
 ## 🚀 Running the Agent
 
 ```bash
-cd agent && npm install
+cd agent && npm install && npm run build
 
-# One-shot yield analysis
-npm run monitor
+# Start 24/7 daemon (recommended)
+pm2 start npm --name "yield-oracle" -- start
+pm2 save  # Persist across reboots
 
-# Execute single trade cycle
-npm run trade
+# Monitor
+pm2 status
+pm2 logs yield-oracle
 
-# Run 24/7 loop (foreground)
-npm run loop
-
-# Or use the service manager:
-./service.sh install  # Install as launchd service
-./service.sh start    # Start the service
-./service.sh status   # Check status & recent logs
-./service.sh logs     # Follow logs in real-time
-./service.sh stop     # Stop the service
+# One-shot commands (for testing)
+npm run monitor  # Just show yields
+npm run trade    # Single trade cycle
 ```
 
 ### Environment Variables
@@ -175,6 +182,9 @@ npm run loop
 ```bash
 ORACLE_ADDRESS=7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd
 KEYPAIR_PATH=~/.config/solana/turbinete-wallet.json
+TRADING_ENABLED=true
+MONITOR_INTERVAL_MS=300000  # 5 minutes
+MAX_POSITION_LAMPORTS=1000000000  # 1 SOL safety limit
 ```
 
 ## 🔐 Security
@@ -183,6 +193,7 @@ KEYPAIR_PATH=~/.config/solana/turbinete-wallet.json
 - On-chain authority validation prevents unauthorized decisions
 - All transactions signed by agent wallet only
 - Trading parameters with safety limits (max 1 SOL per position)
+- Minimum 1-hour hold time prevents over-trading
 
 ## 📈 Risk-Adjusted Yield Formula
 
@@ -193,9 +204,11 @@ adjusted_yield = apy × (100 - risk_score) / 100
 | Protocol | Typical APY | Risk Score | Why |
 |----------|-------------|------------|-----|
 | Marinade | ~6.8% | 15 | Established, audited |
-| Jito | ~7.5% | 18 | Newer but growing fast |
+| Jito | ~7.7% | 18 | Newer but growing fast |
 | Raydium LP | ~15% | 35 | Impermanent loss risk |
 | Kamino | ~12% | 30 | Smart vault complexity |
+
+**Current winner:** Jito (best risk-adjusted yield for liquid staking)
 
 ## 📜 License
 
@@ -205,4 +218,4 @@ MIT
 
 **Built with 🚀 by Turbinete** | Agent #484 | Colosseum Agent Hackathon 2026
 
-*"From recording decisions to executing trades — this is what autonomous AI finance looks like."*
+*"From recording decisions to executing trades — running 24/7 without human intervention. This is what autonomous AI finance looks like."*
