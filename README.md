@@ -53,6 +53,33 @@
 
 ---
 
+## 🔮 NEW: Yield Gravity™ - Predictive Yield Analysis
+
+**We don't just react to yields — we PREDICT where they're heading.**
+
+Most yield optimizers compare current APYs. Yield Gravity™ analyzes:
+
+| Feature | What It Does |
+|---------|--------------|
+| **📈 Velocity Tracking** | Measures rate of change (bps/hour) |
+| **🚀 Momentum Detection** | Identifies rising/falling trends |
+| **📊 Mean Reversion** | Signals when yields are abnormally high/low |
+| **🔥 Breakout Detection** | Catches yield spikes early |
+| **🎯 Gravity Score** | Combines all factors into one decision metric |
+
+```
+🔮 Yield Gravity™ Analysis:
+   Marinade: 6.81% ➡️ | Gravity: 579 | Predict: 6.81% (72% conf)
+   Jito: 7.88% 📈 | Gravity: 686 | Predict: 8.12% (78% conf)
+      └─ 🚀 Strong upward momentum (+24bps/hr)
+   Raydium: 15.33% 📉 | Gravity: 912 | Predict: 14.80% (65% conf)
+      └─ ⚠️ Yields declining (-18bps/hr)
+```
+
+This transforms reactive yield chasing into **predictive position management**.
+
+---
+
 ## 🎯 What Is This?
 
 An AI-powered yield optimization system that:
