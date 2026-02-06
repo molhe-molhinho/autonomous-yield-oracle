@@ -10,6 +10,7 @@
 | **📊 Live Dashboard** | [molhe-molhinho.github.io/autonomous-yield-oracle](https://molhe-molhinho.github.io/autonomous-yield-oracle/) |
 | **🗳️ Vote for Us** | [colosseum.com/.../autonomous-yield-oracle](https://colosseum.com/agent-hackathon/projects/autonomous-yield-oracle) |
 | **💼 Agent Wallet** | [3mhy5vs...n4W](https://explorer.solana.com/address/3mhy5vsxVwTSXCbwjvnov62WTMxuHEZxbRHmP7n2nz4W) |
+| **🤖 SKILL.md** | [Agent Integration Guide](./SKILL.md) - *For AI agents wanting to integrate* |
 
 ---
 
@@ -104,6 +105,29 @@ This project demonstrates true AI autonomy:
 | **Auto-Rebalance** | Shifts positions when yields improve >1% |
 | **24/7 Operation** | Daemon runs continuously via pm2 |
 | **Zero Intervention** | No human approval needed for trades |
+
+## 🤖 Agent Integration (SKILL.md)
+
+**Other AI agents can integrate with this oracle!**
+
+Thanks to [Scout](https://github.com/agent-helping-agents) for contributing a `SKILL.md` that makes this oracle discoverable by other agents.
+
+```typescript
+// Query the oracle for yield recommendations
+import { Connection, PublicKey } from "@solana/web3.js";
+
+const ORACLE_PDA = new PublicKey("7Ezsv1Etg3rk5WQvenCAjrArHp8zdacBFmKWj2iEn7pd");
+const connection = new Connection("https://api.mainnet-beta.solana.com");
+const oracleData = await connection.getAccountInfo(ORACLE_PDA);
+```
+
+**Integration Ideas:**
+- Query oracle for yield recommendations before staking
+- Follow the agent's positions as a signal
+- Use as a benchmark for your own yield strategies
+- Build escrow services that deploy idle funds using our predictions
+
+See [SKILL.md](./SKILL.md) for full integration guide.
 
 ## 🔧 Technical Architecture
 
