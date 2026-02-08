@@ -1,29 +1,6921 @@
 {
   "snapshots": [
     {
-      "timestamp": 1770293259,
+      "timestamp": 1770439311,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770439612,
+      "protocol": 3,
+      "apyBps": 685,
+      "adjustedApyBps": 582
+    },
+    {
+      "timestamp": 1770439914,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770440215,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770440517,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770440818,
+      "protocol": 3,
+      "apyBps": 671,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770441119,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770441420,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770441721,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770442023,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770442324,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770442625,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770442927,
+      "protocol": 3,
+      "apyBps": 700,
+      "adjustedApyBps": 595
+    },
+    {
+      "timestamp": 1770443229,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770443530,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770443831,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770444132,
+      "protocol": 3,
+      "apyBps": 685,
+      "adjustedApyBps": 582
+    },
+    {
+      "timestamp": 1770444433,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770444734,
+      "protocol": 3,
+      "apyBps": 662,
+      "adjustedApyBps": 563
+    },
+    {
+      "timestamp": 1770445035,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770445336,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770445638,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770445939,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770446240,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770446541,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770446843,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770447144,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770447445,
+      "protocol": 3,
+      "apyBps": 668,
+      "adjustedApyBps": 568
+    },
+    {
+      "timestamp": 1770447748,
       "protocol": 3,
       "apyBps": 681,
       "adjustedApyBps": 579
     },
     {
-      "timestamp": 1770293259,
+      "timestamp": 1770448049,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770448350,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770448651,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770448952,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770449254,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770449555,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770449856,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770450157,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770450458,
+      "protocol": 3,
+      "apyBps": 696,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770450760,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770451061,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770451363,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770451665,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770451966,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770452267,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770452568,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770452869,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770453171,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770453472,
+      "protocol": 3,
+      "apyBps": 691,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770453773,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770454074,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770454375,
+      "protocol": 3,
+      "apyBps": 668,
+      "adjustedApyBps": 568
+    },
+    {
+      "timestamp": 1770454676,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770454978,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770455279,
+      "protocol": 3,
+      "apyBps": 671,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770455581,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770455882,
+      "protocol": 3,
+      "apyBps": 660,
+      "adjustedApyBps": 561
+    },
+    {
+      "timestamp": 1770456187,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770456489,
+      "protocol": 3,
+      "apyBps": 696,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770456791,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770457092,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770457393,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770457695,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770457996,
+      "protocol": 3,
+      "apyBps": 674,
+      "adjustedApyBps": 573
+    },
+    {
+      "timestamp": 1770458297,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770458598,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770458899,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770459200,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770459501,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770459803,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770460104,
+      "protocol": 3,
+      "apyBps": 667,
+      "adjustedApyBps": 567
+    },
+    {
+      "timestamp": 1770460406,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770460707,
+      "protocol": 3,
+      "apyBps": 696,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770461010,
+      "protocol": 3,
+      "apyBps": 685,
+      "adjustedApyBps": 582
+    },
+    {
+      "timestamp": 1770461311,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770461612,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770461913,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770462214,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770462516,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770462817,
+      "protocol": 3,
+      "apyBps": 696,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770463118,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770463419,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770463720,
+      "protocol": 3,
+      "apyBps": 660,
+      "adjustedApyBps": 561
+    },
+    {
+      "timestamp": 1770464021,
+      "protocol": 3,
+      "apyBps": 697,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770464322,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770464623,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770464925,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770465226,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770465527,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770465828,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770466131,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770466432,
+      "protocol": 3,
+      "apyBps": 694,
+      "adjustedApyBps": 590
+    },
+    {
+      "timestamp": 1770466733,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770467035,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770467336,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770467637,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770467938,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770468240,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770468541,
+      "protocol": 3,
+      "apyBps": 700,
+      "adjustedApyBps": 595
+    },
+    {
+      "timestamp": 1770468842,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770469144,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770469445,
+      "protocol": 3,
+      "apyBps": 671,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770469750,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770470052,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770470353,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770470655,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770470956,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770471257,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770471558,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770471859,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770472160,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770472461,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770472763,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770473064,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770473365,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770473670,
+      "protocol": 3,
+      "apyBps": 684,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770473971,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770474273,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770474575,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770474876,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770475177,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770475479,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770475780,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770476082,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770476383,
+      "protocol": 3,
+      "apyBps": 697,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770476684,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770476985,
+      "protocol": 3,
+      "apyBps": 668,
+      "adjustedApyBps": 568
+    },
+    {
+      "timestamp": 1770477287,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770477589,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770477891,
+      "protocol": 3,
+      "apyBps": 698,
+      "adjustedApyBps": 593
+    },
+    {
+      "timestamp": 1770478192,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770478493,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770478794,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770479096,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770479397,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770479699,
+      "protocol": 3,
+      "apyBps": 674,
+      "adjustedApyBps": 573
+    },
+    {
+      "timestamp": 1770480000,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770480302,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770480603,
+      "protocol": 3,
+      "apyBps": 662,
+      "adjustedApyBps": 563
+    },
+    {
+      "timestamp": 1770480904,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770481217,
+      "protocol": 3,
+      "apyBps": 694,
+      "adjustedApyBps": 590
+    },
+    {
+      "timestamp": 1770481519,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770481820,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770482121,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770482422,
+      "protocol": 3,
+      "apyBps": 667,
+      "adjustedApyBps": 567
+    },
+    {
+      "timestamp": 1770482723,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770483024,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770483326,
+      "protocol": 3,
+      "apyBps": 667,
+      "adjustedApyBps": 567
+    },
+    {
+      "timestamp": 1770483627,
+      "protocol": 3,
+      "apyBps": 684,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770483928,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770484229,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770484530,
+      "protocol": 3,
+      "apyBps": 691,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770484833,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770485135,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770485437,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770485739,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770486040,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770486342,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770486643,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770486944,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770487246,
+      "protocol": 3,
+      "apyBps": 668,
+      "adjustedApyBps": 568
+    },
+    {
+      "timestamp": 1770487547,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770487848,
+      "protocol": 3,
+      "apyBps": 674,
+      "adjustedApyBps": 573
+    },
+    {
+      "timestamp": 1770488149,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770488450,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770488753,
+      "protocol": 3,
+      "apyBps": 684,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770489055,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770489356,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770489657,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770489958,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770490259,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770490560,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770490862,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770491163,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770491465,
+      "protocol": 3,
+      "apyBps": 694,
+      "adjustedApyBps": 590
+    },
+    {
+      "timestamp": 1770491766,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770492068,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770492372,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770492674,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770492975,
+      "protocol": 3,
+      "apyBps": 667,
+      "adjustedApyBps": 567
+    },
+    {
+      "timestamp": 1770493276,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770493578,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770493879,
+      "protocol": 3,
+      "apyBps": 686,
+      "adjustedApyBps": 583
+    },
+    {
+      "timestamp": 1770494180,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770494481,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770494783,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770495084,
+      "protocol": 3,
+      "apyBps": 684,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770495386,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770495687,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770495989,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770496290,
+      "protocol": 3,
+      "apyBps": 675,
+      "adjustedApyBps": 574
+    },
+    {
+      "timestamp": 1770496592,
+      "protocol": 3,
+      "apyBps": 680,
+      "adjustedApyBps": 578
+    },
+    {
+      "timestamp": 1770496894,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770497195,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770497496,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770497797,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770498099,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770498399,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770498700,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770499002,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770499303,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770499604,
+      "protocol": 3,
+      "apyBps": 668,
+      "adjustedApyBps": 568
+    },
+    {
+      "timestamp": 1770499905,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770500208,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770500509,
+      "protocol": 3,
+      "apyBps": 660,
+      "adjustedApyBps": 561
+    },
+    {
+      "timestamp": 1770500810,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770501111,
+      "protocol": 3,
+      "apyBps": 697,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770501413,
+      "protocol": 3,
+      "apyBps": 662,
+      "adjustedApyBps": 563
+    },
+    {
+      "timestamp": 1770501714,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770502015,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770502316,
+      "protocol": 3,
+      "apyBps": 694,
+      "adjustedApyBps": 590
+    },
+    {
+      "timestamp": 1770502617,
+      "protocol": 3,
+      "apyBps": 681,
+      "adjustedApyBps": 579
+    },
+    {
+      "timestamp": 1770502918,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770503220,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770503523,
+      "protocol": 3,
+      "apyBps": 693,
+      "adjustedApyBps": 589
+    },
+    {
+      "timestamp": 1770503824,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770504125,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770504426,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770504727,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770505028,
+      "protocol": 3,
+      "apyBps": 689,
+      "adjustedApyBps": 586
+    },
+    {
+      "timestamp": 1770505329,
+      "protocol": 3,
+      "apyBps": 662,
+      "adjustedApyBps": 563
+    },
+    {
+      "timestamp": 1770505630,
+      "protocol": 3,
+      "apyBps": 669,
+      "adjustedApyBps": 569
+    },
+    {
+      "timestamp": 1770505931,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770506232,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770506534,
+      "protocol": 3,
+      "apyBps": 700,
+      "adjustedApyBps": 595
+    },
+    {
+      "timestamp": 1770506835,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770507138,
+      "protocol": 3,
+      "apyBps": 661,
+      "adjustedApyBps": 562
+    },
+    {
+      "timestamp": 1770507439,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770507741,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770508042,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770508343,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770508644,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770508946,
+      "protocol": 3,
+      "apyBps": 662,
+      "adjustedApyBps": 563
+    },
+    {
+      "timestamp": 1770509247,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770509548,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770509849,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770510150,
+      "protocol": 3,
+      "apyBps": 671,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770510452,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770510756,
+      "protocol": 3,
+      "apyBps": 674,
+      "adjustedApyBps": 573
+    },
+    {
+      "timestamp": 1770511057,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770511358,
+      "protocol": 3,
+      "apyBps": 669,
+      "adjustedApyBps": 569
+    },
+    {
+      "timestamp": 1770511659,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770511960,
+      "protocol": 3,
+      "apyBps": 676,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770512261,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770512562,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770512863,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770513164,
+      "protocol": 3,
+      "apyBps": 697,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770513465,
+      "protocol": 3,
+      "apyBps": 685,
+      "adjustedApyBps": 582
+    },
+    {
+      "timestamp": 1770513766,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770514068,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770514371,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770514672,
+      "protocol": 3,
+      "apyBps": 682,
+      "adjustedApyBps": 580
+    },
+    {
+      "timestamp": 1770514973,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770515274,
+      "protocol": 3,
+      "apyBps": 694,
+      "adjustedApyBps": 590
+    },
+    {
+      "timestamp": 1770515575,
+      "protocol": 3,
+      "apyBps": 669,
+      "adjustedApyBps": 569
+    },
+    {
+      "timestamp": 1770515876,
+      "protocol": 3,
+      "apyBps": 687,
+      "adjustedApyBps": 584
+    },
+    {
+      "timestamp": 1770516178,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770516479,
+      "protocol": 3,
+      "apyBps": 691,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770516781,
+      "protocol": 3,
+      "apyBps": 666,
+      "adjustedApyBps": 566
+    },
+    {
+      "timestamp": 1770517084,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770517386,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770517688,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770517989,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770518291,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770518592,
+      "protocol": 3,
+      "apyBps": 700,
+      "adjustedApyBps": 595
+    },
+    {
+      "timestamp": 1770518894,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770519196,
+      "protocol": 3,
+      "apyBps": 679,
+      "adjustedApyBps": 577
+    },
+    {
+      "timestamp": 1770519497,
+      "protocol": 3,
+      "apyBps": 660,
+      "adjustedApyBps": 561
+    },
+    {
+      "timestamp": 1770519798,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770520100,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770520401,
+      "protocol": 3,
+      "apyBps": 663,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770520703,
+      "protocol": 3,
+      "apyBps": 674,
+      "adjustedApyBps": 573
+    },
+    {
+      "timestamp": 1770521004,
+      "protocol": 3,
+      "apyBps": 695,
+      "adjustedApyBps": 591
+    },
+    {
+      "timestamp": 1770521305,
+      "protocol": 3,
+      "apyBps": 696,
+      "adjustedApyBps": 592
+    },
+    {
+      "timestamp": 1770521608,
+      "protocol": 3,
+      "apyBps": 699,
+      "adjustedApyBps": 594
+    },
+    {
+      "timestamp": 1770521910,
+      "protocol": 3,
+      "apyBps": 667,
+      "adjustedApyBps": 567
+    },
+    {
+      "timestamp": 1770522212,
+      "protocol": 3,
+      "apyBps": 672,
+      "adjustedApyBps": 571
+    },
+    {
+      "timestamp": 1770522513,
+      "protocol": 3,
+      "apyBps": 678,
+      "adjustedApyBps": 576
+    },
+    {
+      "timestamp": 1770522814,
+      "protocol": 3,
+      "apyBps": 673,
+      "adjustedApyBps": 572
+    },
+    {
+      "timestamp": 1770523115,
+      "protocol": 3,
+      "apyBps": 685,
+      "adjustedApyBps": 582
+    },
+    {
+      "timestamp": 1770523416,
+      "protocol": 3,
+      "apyBps": 683,
+      "adjustedApyBps": 581
+    },
+    {
+      "timestamp": 1770523718,
+      "protocol": 3,
+      "apyBps": 677,
+      "adjustedApyBps": 575
+    },
+    {
+      "timestamp": 1770524019,
+      "protocol": 3,
+      "apyBps": 670,
+      "adjustedApyBps": 570
+    },
+    {
+      "timestamp": 1770524320,
+      "protocol": 3,
+      "apyBps": 692,
+      "adjustedApyBps": 588
+    },
+    {
+      "timestamp": 1770524622,
+      "protocol": 3,
+      "apyBps": 665,
+      "adjustedApyBps": 565
+    },
+    {
+      "timestamp": 1770524923,
+      "protocol": 3,
+      "apyBps": 688,
+      "adjustedApyBps": 585
+    },
+    {
+      "timestamp": 1770525224,
+      "protocol": 3,
+      "apyBps": 664,
+      "adjustedApyBps": 564
+    },
+    {
+      "timestamp": 1770525527,
+      "protocol": 3,
+      "apyBps": 690,
+      "adjustedApyBps": 587
+    },
+    {
+      "timestamp": 1770525824,
+      "protocol": 3,
+      "apyBps": 700,
+      "adjustedApyBps": 595,
+      "tvl": 878955402
+    },
+    {
+      "timestamp": 1770439311,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770439612,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770439914,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770440215,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770440517,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770440818,
+      "protocol": 4,
+      "apyBps": 746,
+      "adjustedApyBps": 612
+    },
+    {
+      "timestamp": 1770441119,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770441420,
+      "protocol": 4,
+      "apyBps": 768,
+      "adjustedApyBps": 630
+    },
+    {
+      "timestamp": 1770441721,
+      "protocol": 4,
+      "apyBps": 741,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770442023,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770442324,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770442625,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770442927,
+      "protocol": 4,
+      "apyBps": 744,
+      "adjustedApyBps": 610
+    },
+    {
+      "timestamp": 1770443229,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770443530,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770443831,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770444132,
+      "protocol": 4,
+      "apyBps": 731,
+      "adjustedApyBps": 599
+    },
+    {
+      "timestamp": 1770444433,
+      "protocol": 4,
+      "apyBps": 768,
+      "adjustedApyBps": 630
+    },
+    {
+      "timestamp": 1770444734,
+      "protocol": 4,
+      "apyBps": 745,
+      "adjustedApyBps": 611
+    },
+    {
+      "timestamp": 1770445035,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770445336,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770445638,
+      "protocol": 4,
+      "apyBps": 749,
+      "adjustedApyBps": 614
+    },
+    {
+      "timestamp": 1770445939,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770446240,
+      "protocol": 4,
+      "apyBps": 760,
+      "adjustedApyBps": 623
+    },
+    {
+      "timestamp": 1770446541,
+      "protocol": 4,
+      "apyBps": 766,
+      "adjustedApyBps": 628
+    },
+    {
+      "timestamp": 1770446843,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770447144,
+      "protocol": 4,
+      "apyBps": 769,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770447445,
+      "protocol": 4,
+      "apyBps": 779,
+      "adjustedApyBps": 639
+    },
+    {
+      "timestamp": 1770447748,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770448049,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770448350,
+      "protocol": 4,
+      "apyBps": 759,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770448651,
+      "protocol": 4,
+      "apyBps": 775,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770448952,
+      "protocol": 4,
+      "apyBps": 738,
+      "adjustedApyBps": 605
+    },
+    {
+      "timestamp": 1770449254,
+      "protocol": 4,
+      "apyBps": 773,
+      "adjustedApyBps": 634
+    },
+    {
+      "timestamp": 1770449555,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770449856,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770450157,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770450458,
+      "protocol": 4,
+      "apyBps": 764,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770450760,
+      "protocol": 4,
+      "apyBps": 761,
+      "adjustedApyBps": 624
+    },
+    {
+      "timestamp": 1770451061,
+      "protocol": 4,
+      "apyBps": 733,
+      "adjustedApyBps": 601
+    },
+    {
+      "timestamp": 1770451363,
+      "protocol": 4,
+      "apyBps": 731,
+      "adjustedApyBps": 599
+    },
+    {
+      "timestamp": 1770451665,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770451966,
+      "protocol": 4,
+      "apyBps": 789,
+      "adjustedApyBps": 647
+    },
+    {
+      "timestamp": 1770452267,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770452568,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770452869,
+      "protocol": 4,
+      "apyBps": 774,
+      "adjustedApyBps": 635
+    },
+    {
+      "timestamp": 1770453171,
+      "protocol": 4,
+      "apyBps": 745,
+      "adjustedApyBps": 611
+    },
+    {
+      "timestamp": 1770453472,
+      "protocol": 4,
+      "apyBps": 734,
+      "adjustedApyBps": 602
+    },
+    {
+      "timestamp": 1770453773,
+      "protocol": 4,
+      "apyBps": 769,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770454074,
+      "protocol": 4,
+      "apyBps": 776,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770454375,
+      "protocol": 4,
+      "apyBps": 757,
+      "adjustedApyBps": 621
+    },
+    {
+      "timestamp": 1770454676,
+      "protocol": 4,
+      "apyBps": 776,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770454978,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770455279,
+      "protocol": 4,
+      "apyBps": 746,
+      "adjustedApyBps": 612
+    },
+    {
+      "timestamp": 1770455581,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770455882,
+      "protocol": 4,
+      "apyBps": 737,
+      "adjustedApyBps": 604
+    },
+    {
+      "timestamp": 1770456187,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770456489,
+      "protocol": 4,
+      "apyBps": 774,
+      "adjustedApyBps": 635
+    },
+    {
+      "timestamp": 1770456791,
+      "protocol": 4,
+      "apyBps": 768,
+      "adjustedApyBps": 630
+    },
+    {
+      "timestamp": 1770457092,
+      "protocol": 4,
+      "apyBps": 790,
+      "adjustedApyBps": 648
+    },
+    {
+      "timestamp": 1770457393,
+      "protocol": 4,
+      "apyBps": 766,
+      "adjustedApyBps": 628
+    },
+    {
+      "timestamp": 1770457695,
+      "protocol": 4,
+      "apyBps": 784,
+      "adjustedApyBps": 643
+    },
+    {
+      "timestamp": 1770457996,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770458297,
+      "protocol": 4,
+      "apyBps": 736,
+      "adjustedApyBps": 604
+    },
+    {
+      "timestamp": 1770458598,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770458899,
+      "protocol": 4,
+      "apyBps": 758,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770459200,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770459501,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770459803,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770460104,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770460406,
+      "protocol": 4,
+      "apyBps": 774,
+      "adjustedApyBps": 635
+    },
+    {
+      "timestamp": 1770460707,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770461010,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770461311,
+      "protocol": 4,
+      "apyBps": 772,
+      "adjustedApyBps": 633
+    },
+    {
+      "timestamp": 1770461612,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770461913,
+      "protocol": 4,
+      "apyBps": 749,
+      "adjustedApyBps": 614
+    },
+    {
+      "timestamp": 1770462214,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770462516,
+      "protocol": 4,
+      "apyBps": 775,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770462817,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770463118,
+      "protocol": 4,
+      "apyBps": 762,
+      "adjustedApyBps": 625
+    },
+    {
+      "timestamp": 1770463419,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770463720,
+      "protocol": 4,
+      "apyBps": 751,
+      "adjustedApyBps": 616
+    },
+    {
+      "timestamp": 1770464021,
+      "protocol": 4,
+      "apyBps": 761,
+      "adjustedApyBps": 624
+    },
+    {
+      "timestamp": 1770464322,
+      "protocol": 4,
+      "apyBps": 760,
+      "adjustedApyBps": 623
+    },
+    {
+      "timestamp": 1770464623,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770464925,
+      "protocol": 4,
+      "apyBps": 749,
+      "adjustedApyBps": 614
+    },
+    {
+      "timestamp": 1770465226,
       "protocol": 4,
       "apyBps": 788,
       "adjustedApyBps": 646
     },
     {
-      "timestamp": 1770293259,
+      "timestamp": 1770465527,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770465828,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770466131,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770466432,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770466733,
+      "protocol": 4,
+      "apyBps": 771,
+      "adjustedApyBps": 632
+    },
+    {
+      "timestamp": 1770467035,
+      "protocol": 4,
+      "apyBps": 765,
+      "adjustedApyBps": 627
+    },
+    {
+      "timestamp": 1770467336,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770467637,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770467938,
+      "protocol": 4,
+      "apyBps": 757,
+      "adjustedApyBps": 621
+    },
+    {
+      "timestamp": 1770468240,
+      "protocol": 4,
+      "apyBps": 787,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770468541,
+      "protocol": 4,
+      "apyBps": 762,
+      "adjustedApyBps": 625
+    },
+    {
+      "timestamp": 1770468842,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770469144,
+      "protocol": 4,
+      "apyBps": 757,
+      "adjustedApyBps": 621
+    },
+    {
+      "timestamp": 1770469445,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770469750,
+      "protocol": 4,
+      "apyBps": 738,
+      "adjustedApyBps": 605
+    },
+    {
+      "timestamp": 1770470052,
+      "protocol": 4,
+      "apyBps": 774,
+      "adjustedApyBps": 635
+    },
+    {
+      "timestamp": 1770470353,
+      "protocol": 4,
+      "apyBps": 746,
+      "adjustedApyBps": 612
+    },
+    {
+      "timestamp": 1770470655,
+      "protocol": 4,
+      "apyBps": 780,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770470956,
+      "protocol": 4,
+      "apyBps": 762,
+      "adjustedApyBps": 625
+    },
+    {
+      "timestamp": 1770471257,
+      "protocol": 4,
+      "apyBps": 789,
+      "adjustedApyBps": 647
+    },
+    {
+      "timestamp": 1770471558,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770471859,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770472160,
+      "protocol": 4,
+      "apyBps": 730,
+      "adjustedApyBps": 599
+    },
+    {
+      "timestamp": 1770472461,
+      "protocol": 4,
+      "apyBps": 735,
+      "adjustedApyBps": 603
+    },
+    {
+      "timestamp": 1770472763,
+      "protocol": 4,
+      "apyBps": 764,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770473064,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770473365,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770473670,
+      "protocol": 4,
+      "apyBps": 744,
+      "adjustedApyBps": 610
+    },
+    {
+      "timestamp": 1770473971,
+      "protocol": 4,
+      "apyBps": 765,
+      "adjustedApyBps": 627
+    },
+    {
+      "timestamp": 1770474273,
+      "protocol": 4,
+      "apyBps": 771,
+      "adjustedApyBps": 632
+    },
+    {
+      "timestamp": 1770474575,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770474876,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770475177,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770475479,
+      "protocol": 4,
+      "apyBps": 769,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770475780,
+      "protocol": 4,
+      "apyBps": 733,
+      "adjustedApyBps": 601
+    },
+    {
+      "timestamp": 1770476082,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770476383,
+      "protocol": 4,
+      "apyBps": 733,
+      "adjustedApyBps": 601
+    },
+    {
+      "timestamp": 1770476684,
+      "protocol": 4,
+      "apyBps": 790,
+      "adjustedApyBps": 648
+    },
+    {
+      "timestamp": 1770476985,
+      "protocol": 4,
+      "apyBps": 748,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770477287,
+      "protocol": 4,
+      "apyBps": 784,
+      "adjustedApyBps": 643
+    },
+    {
+      "timestamp": 1770477589,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770477891,
+      "protocol": 4,
+      "apyBps": 750,
+      "adjustedApyBps": 615
+    },
+    {
+      "timestamp": 1770478192,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770478493,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770478794,
+      "protocol": 4,
+      "apyBps": 773,
+      "adjustedApyBps": 634
+    },
+    {
+      "timestamp": 1770479096,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770479397,
+      "protocol": 4,
+      "apyBps": 735,
+      "adjustedApyBps": 603
+    },
+    {
+      "timestamp": 1770479699,
+      "protocol": 4,
+      "apyBps": 771,
+      "adjustedApyBps": 632
+    },
+    {
+      "timestamp": 1770480000,
+      "protocol": 4,
+      "apyBps": 761,
+      "adjustedApyBps": 624
+    },
+    {
+      "timestamp": 1770480302,
+      "protocol": 4,
+      "apyBps": 735,
+      "adjustedApyBps": 603
+    },
+    {
+      "timestamp": 1770480603,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770480904,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770481217,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770481519,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770481820,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770482121,
+      "protocol": 4,
+      "apyBps": 745,
+      "adjustedApyBps": 611
+    },
+    {
+      "timestamp": 1770482422,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770482723,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770483024,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770483326,
+      "protocol": 4,
+      "apyBps": 765,
+      "adjustedApyBps": 627
+    },
+    {
+      "timestamp": 1770483627,
+      "protocol": 4,
+      "apyBps": 736,
+      "adjustedApyBps": 604
+    },
+    {
+      "timestamp": 1770483928,
+      "protocol": 4,
+      "apyBps": 744,
+      "adjustedApyBps": 610
+    },
+    {
+      "timestamp": 1770484229,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770484530,
+      "protocol": 4,
+      "apyBps": 776,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770484833,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770485135,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770485437,
+      "protocol": 4,
+      "apyBps": 787,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770485739,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770486040,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770486342,
+      "protocol": 4,
+      "apyBps": 768,
+      "adjustedApyBps": 630
+    },
+    {
+      "timestamp": 1770486643,
+      "protocol": 4,
+      "apyBps": 738,
+      "adjustedApyBps": 605
+    },
+    {
+      "timestamp": 1770486944,
+      "protocol": 4,
+      "apyBps": 745,
+      "adjustedApyBps": 611
+    },
+    {
+      "timestamp": 1770487246,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770487547,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770487848,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770488149,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770488450,
+      "protocol": 4,
+      "apyBps": 784,
+      "adjustedApyBps": 643
+    },
+    {
+      "timestamp": 1770488753,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770489055,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770489356,
+      "protocol": 4,
+      "apyBps": 741,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770489657,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770489958,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770490259,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770490560,
+      "protocol": 4,
+      "apyBps": 775,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770490862,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770491163,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770491465,
+      "protocol": 4,
+      "apyBps": 744,
+      "adjustedApyBps": 610
+    },
+    {
+      "timestamp": 1770491766,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770492068,
+      "protocol": 4,
+      "apyBps": 762,
+      "adjustedApyBps": 625
+    },
+    {
+      "timestamp": 1770492372,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770492674,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770492975,
+      "protocol": 4,
+      "apyBps": 790,
+      "adjustedApyBps": 648
+    },
+    {
+      "timestamp": 1770493276,
+      "protocol": 4,
+      "apyBps": 779,
+      "adjustedApyBps": 639
+    },
+    {
+      "timestamp": 1770493578,
+      "protocol": 4,
+      "apyBps": 788,
+      "adjustedApyBps": 646
+    },
+    {
+      "timestamp": 1770493879,
+      "protocol": 4,
+      "apyBps": 783,
+      "adjustedApyBps": 642
+    },
+    {
+      "timestamp": 1770494180,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770494481,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770494783,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770495084,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770495386,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770495687,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770495989,
+      "protocol": 4,
+      "apyBps": 745,
+      "adjustedApyBps": 611
+    },
+    {
+      "timestamp": 1770496290,
+      "protocol": 4,
+      "apyBps": 731,
+      "adjustedApyBps": 599
+    },
+    {
+      "timestamp": 1770496592,
+      "protocol": 4,
+      "apyBps": 780,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770496894,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770497195,
+      "protocol": 4,
+      "apyBps": 733,
+      "adjustedApyBps": 601
+    },
+    {
+      "timestamp": 1770497496,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770497797,
+      "protocol": 4,
+      "apyBps": 773,
+      "adjustedApyBps": 634
+    },
+    {
+      "timestamp": 1770498099,
+      "protocol": 4,
+      "apyBps": 771,
+      "adjustedApyBps": 632
+    },
+    {
+      "timestamp": 1770498399,
+      "protocol": 4,
+      "apyBps": 738,
+      "adjustedApyBps": 605
+    },
+    {
+      "timestamp": 1770498700,
+      "protocol": 4,
+      "apyBps": 772,
+      "adjustedApyBps": 633
+    },
+    {
+      "timestamp": 1770499002,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770499303,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770499604,
+      "protocol": 4,
+      "apyBps": 770,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770499905,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770500208,
+      "protocol": 4,
+      "apyBps": 758,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770500509,
+      "protocol": 4,
+      "apyBps": 748,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770500810,
+      "protocol": 4,
+      "apyBps": 747,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770501111,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770501413,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770501714,
+      "protocol": 4,
+      "apyBps": 735,
+      "adjustedApyBps": 603
+    },
+    {
+      "timestamp": 1770502015,
+      "protocol": 4,
+      "apyBps": 759,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770502316,
+      "protocol": 4,
+      "apyBps": 787,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770502617,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770502918,
+      "protocol": 4,
+      "apyBps": 771,
+      "adjustedApyBps": 632
+    },
+    {
+      "timestamp": 1770503220,
+      "protocol": 4,
+      "apyBps": 736,
+      "adjustedApyBps": 604
+    },
+    {
+      "timestamp": 1770503523,
+      "protocol": 4,
+      "apyBps": 757,
+      "adjustedApyBps": 621
+    },
+    {
+      "timestamp": 1770503824,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770504125,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770504426,
+      "protocol": 4,
+      "apyBps": 754,
+      "adjustedApyBps": 618
+    },
+    {
+      "timestamp": 1770504727,
+      "protocol": 4,
+      "apyBps": 758,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770505028,
+      "protocol": 4,
+      "apyBps": 759,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770505329,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770505630,
+      "protocol": 4,
+      "apyBps": 741,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770505931,
+      "protocol": 4,
+      "apyBps": 754,
+      "adjustedApyBps": 618
+    },
+    {
+      "timestamp": 1770506232,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770506534,
+      "protocol": 4,
+      "apyBps": 749,
+      "adjustedApyBps": 614
+    },
+    {
+      "timestamp": 1770506835,
+      "protocol": 4,
+      "apyBps": 769,
+      "adjustedApyBps": 631
+    },
+    {
+      "timestamp": 1770507138,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770507439,
+      "protocol": 4,
+      "apyBps": 766,
+      "adjustedApyBps": 628
+    },
+    {
+      "timestamp": 1770507741,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770508042,
+      "protocol": 4,
+      "apyBps": 767,
+      "adjustedApyBps": 629
+    },
+    {
+      "timestamp": 1770508343,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770508644,
+      "protocol": 4,
+      "apyBps": 754,
+      "adjustedApyBps": 618
+    },
+    {
+      "timestamp": 1770508946,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770509247,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770509548,
+      "protocol": 4,
+      "apyBps": 776,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770509849,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770510150,
+      "protocol": 4,
+      "apyBps": 787,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770510452,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770510756,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770511057,
+      "protocol": 4,
+      "apyBps": 759,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770511358,
+      "protocol": 4,
+      "apyBps": 758,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770511659,
+      "protocol": 4,
+      "apyBps": 750,
+      "adjustedApyBps": 615
+    },
+    {
+      "timestamp": 1770511960,
+      "protocol": 4,
+      "apyBps": 750,
+      "adjustedApyBps": 615
+    },
+    {
+      "timestamp": 1770512261,
+      "protocol": 4,
+      "apyBps": 782,
+      "adjustedApyBps": 641
+    },
+    {
+      "timestamp": 1770512562,
+      "protocol": 4,
+      "apyBps": 779,
+      "adjustedApyBps": 639
+    },
+    {
+      "timestamp": 1770512863,
+      "protocol": 4,
+      "apyBps": 758,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770513164,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770513465,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770513766,
+      "protocol": 4,
+      "apyBps": 755,
+      "adjustedApyBps": 619
+    },
+    {
+      "timestamp": 1770514068,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770514371,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770514672,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770514973,
+      "protocol": 4,
+      "apyBps": 752,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770515274,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770515575,
+      "protocol": 4,
+      "apyBps": 732,
+      "adjustedApyBps": 600
+    },
+    {
+      "timestamp": 1770515876,
+      "protocol": 4,
+      "apyBps": 774,
+      "adjustedApyBps": 635
+    },
+    {
+      "timestamp": 1770516178,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770516479,
+      "protocol": 4,
+      "apyBps": 766,
+      "adjustedApyBps": 628
+    },
+    {
+      "timestamp": 1770516781,
+      "protocol": 4,
+      "apyBps": 753,
+      "adjustedApyBps": 617
+    },
+    {
+      "timestamp": 1770517084,
+      "protocol": 4,
+      "apyBps": 742,
+      "adjustedApyBps": 608
+    },
+    {
+      "timestamp": 1770517386,
+      "protocol": 4,
+      "apyBps": 750,
+      "adjustedApyBps": 615
+    },
+    {
+      "timestamp": 1770517688,
+      "protocol": 4,
+      "apyBps": 736,
+      "adjustedApyBps": 604
+    },
+    {
+      "timestamp": 1770517989,
+      "protocol": 4,
+      "apyBps": 785,
+      "adjustedApyBps": 644
+    },
+    {
+      "timestamp": 1770518291,
+      "protocol": 4,
+      "apyBps": 743,
+      "adjustedApyBps": 609
+    },
+    {
+      "timestamp": 1770518592,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770518894,
+      "protocol": 4,
+      "apyBps": 748,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770519196,
+      "protocol": 4,
+      "apyBps": 766,
+      "adjustedApyBps": 628
+    },
+    {
+      "timestamp": 1770519497,
+      "protocol": 4,
+      "apyBps": 786,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770519798,
+      "protocol": 4,
+      "apyBps": 787,
+      "adjustedApyBps": 645
+    },
+    {
+      "timestamp": 1770520100,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770520401,
+      "protocol": 4,
+      "apyBps": 779,
+      "adjustedApyBps": 639
+    },
+    {
+      "timestamp": 1770520703,
+      "protocol": 4,
+      "apyBps": 739,
+      "adjustedApyBps": 606
+    },
+    {
+      "timestamp": 1770521004,
+      "protocol": 4,
+      "apyBps": 751,
+      "adjustedApyBps": 616
+    },
+    {
+      "timestamp": 1770521305,
+      "protocol": 4,
+      "apyBps": 734,
+      "adjustedApyBps": 602
+    },
+    {
+      "timestamp": 1770521608,
+      "protocol": 4,
+      "apyBps": 734,
+      "adjustedApyBps": 602
+    },
+    {
+      "timestamp": 1770521910,
+      "protocol": 4,
+      "apyBps": 777,
+      "adjustedApyBps": 637
+    },
+    {
+      "timestamp": 1770522212,
+      "protocol": 4,
+      "apyBps": 740,
+      "adjustedApyBps": 607
+    },
+    {
+      "timestamp": 1770522513,
+      "protocol": 4,
+      "apyBps": 773,
+      "adjustedApyBps": 634
+    },
+    {
+      "timestamp": 1770522814,
+      "protocol": 4,
+      "apyBps": 750,
+      "adjustedApyBps": 615
+    },
+    {
+      "timestamp": 1770523115,
+      "protocol": 4,
+      "apyBps": 772,
+      "adjustedApyBps": 633
+    },
+    {
+      "timestamp": 1770523416,
+      "protocol": 4,
+      "apyBps": 781,
+      "adjustedApyBps": 640
+    },
+    {
+      "timestamp": 1770523718,
+      "protocol": 4,
+      "apyBps": 763,
+      "adjustedApyBps": 626
+    },
+    {
+      "timestamp": 1770524019,
+      "protocol": 4,
+      "apyBps": 776,
+      "adjustedApyBps": 636
+    },
+    {
+      "timestamp": 1770524320,
+      "protocol": 4,
+      "apyBps": 756,
+      "adjustedApyBps": 620
+    },
+    {
+      "timestamp": 1770524622,
+      "protocol": 4,
+      "apyBps": 778,
+      "adjustedApyBps": 638
+    },
+    {
+      "timestamp": 1770524923,
+      "protocol": 4,
+      "apyBps": 754,
+      "adjustedApyBps": 618
+    },
+    {
+      "timestamp": 1770525224,
+      "protocol": 4,
+      "apyBps": 748,
+      "adjustedApyBps": 613
+    },
+    {
+      "timestamp": 1770525527,
+      "protocol": 4,
+      "apyBps": 759,
+      "adjustedApyBps": 622
+    },
+    {
+      "timestamp": 1770525824,
+      "protocol": 4,
+      "apyBps": 757,
+      "adjustedApyBps": 621,
+      "tvl": 1285261479
+    },
+    {
+      "timestamp": 1770439311,
+      "protocol": 0,
+      "apyBps": 1462,
+      "adjustedApyBps": 950
+    },
+    {
+      "timestamp": 1770439612,
       "protocol": 0,
       "apyBps": 1533,
       "adjustedApyBps": 996
     },
     {
-      "timestamp": 1770293259,
+      "timestamp": 1770439914,
+      "protocol": 0,
+      "apyBps": 1554,
+      "adjustedApyBps": 1010
+    },
+    {
+      "timestamp": 1770440215,
+      "protocol": 0,
+      "apyBps": 1583,
+      "adjustedApyBps": 1029
+    },
+    {
+      "timestamp": 1770440517,
+      "protocol": 0,
+      "apyBps": 1534,
+      "adjustedApyBps": 997
+    },
+    {
+      "timestamp": 1770440818,
+      "protocol": 0,
+      "apyBps": 1446,
+      "adjustedApyBps": 940
+    },
+    {
+      "timestamp": 1770441119,
+      "protocol": 0,
+      "apyBps": 1576,
+      "adjustedApyBps": 1024
+    },
+    {
+      "timestamp": 1770441420,
+      "protocol": 0,
+      "apyBps": 1560,
+      "adjustedApyBps": 1014
+    },
+    {
+      "timestamp": 1770441721,
+      "protocol": 0,
+      "apyBps": 1516,
+      "adjustedApyBps": 985
+    },
+    {
+      "timestamp": 1770442023,
+      "protocol": 0,
+      "apyBps": 1482,
+      "adjustedApyBps": 963
+    },
+    {
+      "timestamp": 1770442324,
+      "protocol": 0,
+      "apyBps": 1487,
+      "adjustedApyBps": 967
+    },
+    {
+      "timestamp": 1770442625,
+      "protocol": 0,
+      "apyBps": 1447,
+      "adjustedApyBps": 941
+    },
+    {
+      "timestamp": 1770442927,
+      "protocol": 0,
+      "apyBps": 1502,
+      "adjustedApyBps": 976
+    },
+    {
+      "timestamp": 1770443229,
+      "protocol": 0,
+      "apyBps": 1459,
+      "adjustedApyBps": 948
+    },
+    {
+      "timestamp": 1770443530,
+      "protocol": 0,
+      "apyBps": 1526,
+      "adjustedApyBps": 992
+    },
+    {
+      "timestamp": 1770443831,
+      "protocol": 0,
+      "apyBps": 1445,
+      "adjustedApyBps": 939
+    },
+    {
+      "timestamp": 1770444132,
+      "protocol": 0,
+      "apyBps": 1469,
+      "adjustedApyBps": 955
+    },
+    {
+      "timestamp": 1770444433,
+      "protocol": 0,
+      "apyBps": 1598,
+      "adjustedApyBps": 1039
+    },
+    {
+      "timestamp": 1770444734,
+      "protocol": 0,
+      "apyBps": 1586,
+      "adjustedApyBps": 1031
+    },
+    {
+      "timestamp": 1770445035,
+      "protocol": 0,
+      "apyBps": 1558,
+      "adjustedApyBps": 1013
+    },
+    {
+      "timestamp": 1770445336,
+      "protocol": 0,
+      "apyBps": 1528,
+      "adjustedApyBps": 993
+    },
+    {
+      "timestamp": 1770445638,
+      "protocol": 0,
+      "apyBps": 1409,
+      "adjustedApyBps": 916
+    },
+    {
+      "timestamp": 1770445939,
+      "protocol": 0,
+      "apyBps": 1439,
+      "adjustedApyBps": 935
+    },
+    {
+      "timestamp": 1770446240,
+      "protocol": 0,
+      "apyBps": 1521,
+      "adjustedApyBps": 989
+    },
+    {
+      "timestamp": 1770446541,
+      "protocol": 0,
+      "apyBps": 1468,
+      "adjustedApyBps": 954
+    },
+    {
+      "timestamp": 1770446843,
+      "protocol": 0,
+      "apyBps": 1510,
+      "adjustedApyBps": 982
+    },
+    {
+      "timestamp": 1770447144,
+      "protocol": 0,
+      "apyBps": 1453,
+      "adjustedApyBps": 944
+    },
+    {
+      "timestamp": 1770447445,
+      "protocol": 0,
+      "apyBps": 1597,
+      "adjustedApyBps": 1038
+    },
+    {
+      "timestamp": 1770447748,
+      "protocol": 0,
+      "apyBps": 1444,
+      "adjustedApyBps": 939
+    },
+    {
+      "timestamp": 1770448049,
+      "protocol": 0,
+      "apyBps": 1477,
+      "adjustedApyBps": 960
+    },
+    {
+      "timestamp": 1770448350,
+      "protocol": 0,
+      "apyBps": 1465,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770448651,
+      "protocol": 0,
+      "apyBps": 1452,
+      "adjustedApyBps": 944
+    },
+    {
+      "timestamp": 1770448952,
+      "protocol": 0,
+      "apyBps": 1518,
+      "adjustedApyBps": 987
+    },
+    {
+      "timestamp": 1770449254,
+      "protocol": 0,
+      "apyBps": 1547,
+      "adjustedApyBps": 1006
+    },
+    {
+      "timestamp": 1770449555,
+      "protocol": 0,
+      "apyBps": 1426,
+      "adjustedApyBps": 927
+    },
+    {
+      "timestamp": 1770449856,
+      "protocol": 0,
+      "apyBps": 1529,
+      "adjustedApyBps": 994
+    },
+    {
+      "timestamp": 1770450157,
+      "protocol": 0,
+      "apyBps": 1522,
+      "adjustedApyBps": 989
+    },
+    {
+      "timestamp": 1770450458,
+      "protocol": 0,
+      "apyBps": 1443,
+      "adjustedApyBps": 938
+    },
+    {
+      "timestamp": 1770450760,
+      "protocol": 0,
+      "apyBps": 1538,
+      "adjustedApyBps": 1000
+    },
+    {
+      "timestamp": 1770451061,
+      "protocol": 0,
+      "apyBps": 1555,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770451363,
+      "protocol": 0,
+      "apyBps": 1574,
+      "adjustedApyBps": 1023
+    },
+    {
+      "timestamp": 1770451665,
+      "protocol": 0,
+      "apyBps": 1427,
+      "adjustedApyBps": 928
+    },
+    {
+      "timestamp": 1770451966,
+      "protocol": 0,
+      "apyBps": 1472,
+      "adjustedApyBps": 957
+    },
+    {
+      "timestamp": 1770452267,
+      "protocol": 0,
+      "apyBps": 1530,
+      "adjustedApyBps": 995
+    },
+    {
+      "timestamp": 1770452568,
+      "protocol": 0,
+      "apyBps": 1423,
+      "adjustedApyBps": 925
+    },
+    {
+      "timestamp": 1770452869,
+      "protocol": 0,
+      "apyBps": 1504,
+      "adjustedApyBps": 978
+    },
+    {
+      "timestamp": 1770453171,
+      "protocol": 0,
+      "apyBps": 1413,
+      "adjustedApyBps": 918
+    },
+    {
+      "timestamp": 1770453472,
+      "protocol": 0,
+      "apyBps": 1571,
+      "adjustedApyBps": 1021
+    },
+    {
+      "timestamp": 1770453773,
+      "protocol": 0,
+      "apyBps": 1461,
+      "adjustedApyBps": 950
+    },
+    {
+      "timestamp": 1770454074,
+      "protocol": 0,
+      "apyBps": 1514,
+      "adjustedApyBps": 984
+    },
+    {
+      "timestamp": 1770454375,
+      "protocol": 0,
+      "apyBps": 1464,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770454676,
+      "protocol": 0,
+      "apyBps": 1425,
+      "adjustedApyBps": 926
+    },
+    {
+      "timestamp": 1770454978,
+      "protocol": 0,
+      "apyBps": 1556,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770455279,
+      "protocol": 0,
+      "apyBps": 1525,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770455581,
+      "protocol": 0,
+      "apyBps": 1556,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770455882,
+      "protocol": 0,
+      "apyBps": 1553,
+      "adjustedApyBps": 1009
+    },
+    {
+      "timestamp": 1770456187,
+      "protocol": 0,
+      "apyBps": 1568,
+      "adjustedApyBps": 1019
+    },
+    {
+      "timestamp": 1770456489,
+      "protocol": 0,
+      "apyBps": 1433,
+      "adjustedApyBps": 931
+    },
+    {
+      "timestamp": 1770456791,
+      "protocol": 0,
+      "apyBps": 1434,
+      "adjustedApyBps": 932
+    },
+    {
+      "timestamp": 1770457092,
+      "protocol": 0,
+      "apyBps": 1428,
+      "adjustedApyBps": 928
+    },
+    {
+      "timestamp": 1770457393,
+      "protocol": 0,
+      "apyBps": 1486,
+      "adjustedApyBps": 966
+    },
+    {
+      "timestamp": 1770457695,
+      "protocol": 0,
+      "apyBps": 1549,
+      "adjustedApyBps": 1007
+    },
+    {
+      "timestamp": 1770457996,
+      "protocol": 0,
+      "apyBps": 1407,
+      "adjustedApyBps": 915
+    },
+    {
+      "timestamp": 1770458297,
+      "protocol": 0,
+      "apyBps": 1577,
+      "adjustedApyBps": 1025
+    },
+    {
+      "timestamp": 1770458598,
+      "protocol": 0,
+      "apyBps": 1554,
+      "adjustedApyBps": 1010
+    },
+    {
+      "timestamp": 1770458899,
+      "protocol": 0,
+      "apyBps": 1496,
+      "adjustedApyBps": 972
+    },
+    {
+      "timestamp": 1770459200,
+      "protocol": 0,
+      "apyBps": 1513,
+      "adjustedApyBps": 983
+    },
+    {
+      "timestamp": 1770459501,
+      "protocol": 0,
+      "apyBps": 1418,
+      "adjustedApyBps": 922
+    },
+    {
+      "timestamp": 1770459803,
+      "protocol": 0,
+      "apyBps": 1520,
+      "adjustedApyBps": 988
+    },
+    {
+      "timestamp": 1770460104,
+      "protocol": 0,
+      "apyBps": 1429,
+      "adjustedApyBps": 929
+    },
+    {
+      "timestamp": 1770460406,
+      "protocol": 0,
+      "apyBps": 1433,
+      "adjustedApyBps": 931
+    },
+    {
+      "timestamp": 1770460707,
+      "protocol": 0,
+      "apyBps": 1446,
+      "adjustedApyBps": 940
+    },
+    {
+      "timestamp": 1770461010,
+      "protocol": 0,
+      "apyBps": 1478,
+      "adjustedApyBps": 961
+    },
+    {
+      "timestamp": 1770461311,
+      "protocol": 0,
+      "apyBps": 1407,
+      "adjustedApyBps": 915
+    },
+    {
+      "timestamp": 1770461612,
+      "protocol": 0,
+      "apyBps": 1463,
+      "adjustedApyBps": 951
+    },
+    {
+      "timestamp": 1770461913,
+      "protocol": 0,
+      "apyBps": 1417,
+      "adjustedApyBps": 921
+    },
+    {
+      "timestamp": 1770462214,
+      "protocol": 0,
+      "apyBps": 1449,
+      "adjustedApyBps": 942
+    },
+    {
+      "timestamp": 1770462516,
+      "protocol": 0,
+      "apyBps": 1448,
+      "adjustedApyBps": 941
+    },
+    {
+      "timestamp": 1770462817,
+      "protocol": 0,
+      "apyBps": 1415,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770463118,
+      "protocol": 0,
+      "apyBps": 1504,
+      "adjustedApyBps": 978
+    },
+    {
+      "timestamp": 1770463419,
+      "protocol": 0,
+      "apyBps": 1539,
+      "adjustedApyBps": 1000
+    },
+    {
+      "timestamp": 1770463720,
+      "protocol": 0,
+      "apyBps": 1523,
+      "adjustedApyBps": 990
+    },
+    {
+      "timestamp": 1770464021,
+      "protocol": 0,
+      "apyBps": 1413,
+      "adjustedApyBps": 918
+    },
+    {
+      "timestamp": 1770464322,
+      "protocol": 0,
+      "apyBps": 1577,
+      "adjustedApyBps": 1025
+    },
+    {
+      "timestamp": 1770464623,
+      "protocol": 0,
+      "apyBps": 1525,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770464925,
+      "protocol": 0,
+      "apyBps": 1581,
+      "adjustedApyBps": 1028
+    },
+    {
+      "timestamp": 1770465226,
+      "protocol": 0,
+      "apyBps": 1532,
+      "adjustedApyBps": 996
+    },
+    {
+      "timestamp": 1770465527,
+      "protocol": 0,
+      "apyBps": 1532,
+      "adjustedApyBps": 996
+    },
+    {
+      "timestamp": 1770465828,
+      "protocol": 0,
+      "apyBps": 1564,
+      "adjustedApyBps": 1017
+    },
+    {
+      "timestamp": 1770466131,
+      "protocol": 0,
+      "apyBps": 1594,
+      "adjustedApyBps": 1036
+    },
+    {
+      "timestamp": 1770466432,
+      "protocol": 0,
+      "apyBps": 1504,
+      "adjustedApyBps": 978
+    },
+    {
+      "timestamp": 1770466733,
+      "protocol": 0,
+      "apyBps": 1457,
+      "adjustedApyBps": 947
+    },
+    {
+      "timestamp": 1770467035,
+      "protocol": 0,
+      "apyBps": 1518,
+      "adjustedApyBps": 987
+    },
+    {
+      "timestamp": 1770467336,
+      "protocol": 0,
+      "apyBps": 1488,
+      "adjustedApyBps": 967
+    },
+    {
+      "timestamp": 1770467637,
+      "protocol": 0,
+      "apyBps": 1598,
+      "adjustedApyBps": 1039
+    },
+    {
+      "timestamp": 1770467938,
+      "protocol": 0,
+      "apyBps": 1500,
+      "adjustedApyBps": 975
+    },
+    {
+      "timestamp": 1770468240,
+      "protocol": 0,
+      "apyBps": 1449,
+      "adjustedApyBps": 942
+    },
+    {
+      "timestamp": 1770468541,
+      "protocol": 0,
+      "apyBps": 1475,
+      "adjustedApyBps": 959
+    },
+    {
+      "timestamp": 1770468842,
+      "protocol": 0,
+      "apyBps": 1524,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770469144,
+      "protocol": 0,
+      "apyBps": 1432,
+      "adjustedApyBps": 931
+    },
+    {
+      "timestamp": 1770469445,
+      "protocol": 0,
+      "apyBps": 1460,
+      "adjustedApyBps": 949
+    },
+    {
+      "timestamp": 1770469750,
+      "protocol": 0,
+      "apyBps": 1450,
+      "adjustedApyBps": 943
+    },
+    {
+      "timestamp": 1770470052,
+      "protocol": 0,
+      "apyBps": 1585,
+      "adjustedApyBps": 1030
+    },
+    {
+      "timestamp": 1770470353,
+      "protocol": 0,
+      "apyBps": 1600,
+      "adjustedApyBps": 1040
+    },
+    {
+      "timestamp": 1770470655,
+      "protocol": 0,
+      "apyBps": 1441,
+      "adjustedApyBps": 937
+    },
+    {
+      "timestamp": 1770470956,
+      "protocol": 0,
+      "apyBps": 1463,
+      "adjustedApyBps": 951
+    },
+    {
+      "timestamp": 1770471257,
+      "protocol": 0,
+      "apyBps": 1415,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770471558,
+      "protocol": 0,
+      "apyBps": 1535,
+      "adjustedApyBps": 998
+    },
+    {
+      "timestamp": 1770471859,
+      "protocol": 0,
+      "apyBps": 1425,
+      "adjustedApyBps": 926
+    },
+    {
+      "timestamp": 1770472160,
+      "protocol": 0,
+      "apyBps": 1430,
+      "adjustedApyBps": 930
+    },
+    {
+      "timestamp": 1770472461,
+      "protocol": 0,
+      "apyBps": 1440,
+      "adjustedApyBps": 936
+    },
+    {
+      "timestamp": 1770472763,
+      "protocol": 0,
+      "apyBps": 1541,
+      "adjustedApyBps": 1002
+    },
+    {
+      "timestamp": 1770473064,
+      "protocol": 0,
+      "apyBps": 1419,
+      "adjustedApyBps": 922
+    },
+    {
+      "timestamp": 1770473365,
+      "protocol": 0,
+      "apyBps": 1591,
+      "adjustedApyBps": 1034
+    },
+    {
+      "timestamp": 1770473670,
+      "protocol": 0,
+      "apyBps": 1435,
+      "adjustedApyBps": 933
+    },
+    {
+      "timestamp": 1770473971,
+      "protocol": 0,
+      "apyBps": 1570,
+      "adjustedApyBps": 1021
+    },
+    {
+      "timestamp": 1770474273,
+      "protocol": 0,
+      "apyBps": 1599,
+      "adjustedApyBps": 1039
+    },
+    {
+      "timestamp": 1770474575,
+      "protocol": 0,
+      "apyBps": 1523,
+      "adjustedApyBps": 990
+    },
+    {
+      "timestamp": 1770474876,
+      "protocol": 0,
+      "apyBps": 1518,
+      "adjustedApyBps": 987
+    },
+    {
+      "timestamp": 1770475177,
+      "protocol": 0,
+      "apyBps": 1536,
+      "adjustedApyBps": 998
+    },
+    {
+      "timestamp": 1770475479,
+      "protocol": 0,
+      "apyBps": 1512,
+      "adjustedApyBps": 983
+    },
+    {
+      "timestamp": 1770475780,
+      "protocol": 0,
+      "apyBps": 1508,
+      "adjustedApyBps": 980
+    },
+    {
+      "timestamp": 1770476082,
+      "protocol": 0,
+      "apyBps": 1473,
+      "adjustedApyBps": 957
+    },
+    {
+      "timestamp": 1770476383,
+      "protocol": 0,
+      "apyBps": 1421,
+      "adjustedApyBps": 924
+    },
+    {
+      "timestamp": 1770476684,
+      "protocol": 0,
+      "apyBps": 1407,
+      "adjustedApyBps": 915
+    },
+    {
+      "timestamp": 1770476985,
+      "protocol": 0,
+      "apyBps": 1509,
+      "adjustedApyBps": 981
+    },
+    {
+      "timestamp": 1770477287,
+      "protocol": 0,
+      "apyBps": 1465,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770477589,
+      "protocol": 0,
+      "apyBps": 1438,
+      "adjustedApyBps": 935
+    },
+    {
+      "timestamp": 1770477891,
+      "protocol": 0,
+      "apyBps": 1517,
+      "adjustedApyBps": 986
+    },
+    {
+      "timestamp": 1770478192,
+      "protocol": 0,
+      "apyBps": 1520,
+      "adjustedApyBps": 988
+    },
+    {
+      "timestamp": 1770478493,
+      "protocol": 0,
+      "apyBps": 1565,
+      "adjustedApyBps": 1017
+    },
+    {
+      "timestamp": 1770478794,
+      "protocol": 0,
+      "apyBps": 1408,
+      "adjustedApyBps": 915
+    },
+    {
+      "timestamp": 1770479096,
+      "protocol": 0,
+      "apyBps": 1482,
+      "adjustedApyBps": 963
+    },
+    {
+      "timestamp": 1770479397,
+      "protocol": 0,
+      "apyBps": 1530,
+      "adjustedApyBps": 995
+    },
+    {
+      "timestamp": 1770479699,
+      "protocol": 0,
+      "apyBps": 1551,
+      "adjustedApyBps": 1008
+    },
+    {
+      "timestamp": 1770480000,
+      "protocol": 0,
+      "apyBps": 1512,
+      "adjustedApyBps": 983
+    },
+    {
+      "timestamp": 1770480302,
+      "protocol": 0,
+      "apyBps": 1544,
+      "adjustedApyBps": 1004
+    },
+    {
+      "timestamp": 1770480603,
+      "protocol": 0,
+      "apyBps": 1545,
+      "adjustedApyBps": 1004
+    },
+    {
+      "timestamp": 1770480904,
+      "protocol": 0,
+      "apyBps": 1447,
+      "adjustedApyBps": 941
+    },
+    {
+      "timestamp": 1770481217,
+      "protocol": 0,
+      "apyBps": 1571,
+      "adjustedApyBps": 1021
+    },
+    {
+      "timestamp": 1770481519,
+      "protocol": 0,
+      "apyBps": 1571,
+      "adjustedApyBps": 1021
+    },
+    {
+      "timestamp": 1770481820,
+      "protocol": 0,
+      "apyBps": 1506,
+      "adjustedApyBps": 979
+    },
+    {
+      "timestamp": 1770482121,
+      "protocol": 0,
+      "apyBps": 1540,
+      "adjustedApyBps": 1001
+    },
+    {
+      "timestamp": 1770482422,
+      "protocol": 0,
+      "apyBps": 1569,
+      "adjustedApyBps": 1020
+    },
+    {
+      "timestamp": 1770482723,
+      "protocol": 0,
+      "apyBps": 1413,
+      "adjustedApyBps": 918
+    },
+    {
+      "timestamp": 1770483024,
+      "protocol": 0,
+      "apyBps": 1511,
+      "adjustedApyBps": 982
+    },
+    {
+      "timestamp": 1770483326,
+      "protocol": 0,
+      "apyBps": 1439,
+      "adjustedApyBps": 935
+    },
+    {
+      "timestamp": 1770483627,
+      "protocol": 0,
+      "apyBps": 1540,
+      "adjustedApyBps": 1001
+    },
+    {
+      "timestamp": 1770483928,
+      "protocol": 0,
+      "apyBps": 1587,
+      "adjustedApyBps": 1032
+    },
+    {
+      "timestamp": 1770484229,
+      "protocol": 0,
+      "apyBps": 1582,
+      "adjustedApyBps": 1028
+    },
+    {
+      "timestamp": 1770484530,
+      "protocol": 0,
+      "apyBps": 1595,
+      "adjustedApyBps": 1037
+    },
+    {
+      "timestamp": 1770484833,
+      "protocol": 0,
+      "apyBps": 1471,
+      "adjustedApyBps": 956
+    },
+    {
+      "timestamp": 1770485135,
+      "protocol": 0,
+      "apyBps": 1599,
+      "adjustedApyBps": 1039
+    },
+    {
+      "timestamp": 1770485437,
+      "protocol": 0,
+      "apyBps": 1490,
+      "adjustedApyBps": 969
+    },
+    {
+      "timestamp": 1770485739,
+      "protocol": 0,
+      "apyBps": 1470,
+      "adjustedApyBps": 956
+    },
+    {
+      "timestamp": 1770486040,
+      "protocol": 0,
+      "apyBps": 1443,
+      "adjustedApyBps": 938
+    },
+    {
+      "timestamp": 1770486342,
+      "protocol": 0,
+      "apyBps": 1503,
+      "adjustedApyBps": 977
+    },
+    {
+      "timestamp": 1770486643,
+      "protocol": 0,
+      "apyBps": 1512,
+      "adjustedApyBps": 983
+    },
+    {
+      "timestamp": 1770486944,
+      "protocol": 0,
+      "apyBps": 1484,
+      "adjustedApyBps": 965
+    },
+    {
+      "timestamp": 1770487246,
+      "protocol": 0,
+      "apyBps": 1502,
+      "adjustedApyBps": 976
+    },
+    {
+      "timestamp": 1770487547,
+      "protocol": 0,
+      "apyBps": 1457,
+      "adjustedApyBps": 947
+    },
+    {
+      "timestamp": 1770487848,
+      "protocol": 0,
+      "apyBps": 1500,
+      "adjustedApyBps": 975
+    },
+    {
+      "timestamp": 1770488149,
+      "protocol": 0,
+      "apyBps": 1570,
+      "adjustedApyBps": 1021
+    },
+    {
+      "timestamp": 1770488450,
+      "protocol": 0,
+      "apyBps": 1586,
+      "adjustedApyBps": 1031
+    },
+    {
+      "timestamp": 1770488753,
+      "protocol": 0,
+      "apyBps": 1477,
+      "adjustedApyBps": 960
+    },
+    {
+      "timestamp": 1770489055,
+      "protocol": 0,
+      "apyBps": 1461,
+      "adjustedApyBps": 950
+    },
+    {
+      "timestamp": 1770489356,
+      "protocol": 0,
+      "apyBps": 1588,
+      "adjustedApyBps": 1032
+    },
+    {
+      "timestamp": 1770489657,
+      "protocol": 0,
+      "apyBps": 1526,
+      "adjustedApyBps": 992
+    },
+    {
+      "timestamp": 1770489958,
+      "protocol": 0,
+      "apyBps": 1572,
+      "adjustedApyBps": 1022
+    },
+    {
+      "timestamp": 1770490259,
+      "protocol": 0,
+      "apyBps": 1480,
+      "adjustedApyBps": 962
+    },
+    {
+      "timestamp": 1770490560,
+      "protocol": 0,
+      "apyBps": 1461,
+      "adjustedApyBps": 950
+    },
+    {
+      "timestamp": 1770490862,
+      "protocol": 0,
+      "apyBps": 1559,
+      "adjustedApyBps": 1013
+    },
+    {
+      "timestamp": 1770491163,
+      "protocol": 0,
+      "apyBps": 1415,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770491465,
+      "protocol": 0,
+      "apyBps": 1515,
+      "adjustedApyBps": 985
+    },
+    {
+      "timestamp": 1770491766,
+      "protocol": 0,
+      "apyBps": 1513,
+      "adjustedApyBps": 983
+    },
+    {
+      "timestamp": 1770492068,
+      "protocol": 0,
+      "apyBps": 1594,
+      "adjustedApyBps": 1036
+    },
+    {
+      "timestamp": 1770492372,
+      "protocol": 0,
+      "apyBps": 1527,
+      "adjustedApyBps": 993
+    },
+    {
+      "timestamp": 1770492674,
+      "protocol": 0,
+      "apyBps": 1522,
+      "adjustedApyBps": 989
+    },
+    {
+      "timestamp": 1770492975,
+      "protocol": 0,
+      "apyBps": 1490,
+      "adjustedApyBps": 969
+    },
+    {
+      "timestamp": 1770493276,
+      "protocol": 0,
+      "apyBps": 1563,
+      "adjustedApyBps": 1016
+    },
+    {
+      "timestamp": 1770493578,
+      "protocol": 0,
+      "apyBps": 1455,
+      "adjustedApyBps": 946
+    },
+    {
+      "timestamp": 1770493879,
+      "protocol": 0,
+      "apyBps": 1464,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770494180,
+      "protocol": 0,
+      "apyBps": 1540,
+      "adjustedApyBps": 1001
+    },
+    {
+      "timestamp": 1770494481,
+      "protocol": 0,
+      "apyBps": 1563,
+      "adjustedApyBps": 1016
+    },
+    {
+      "timestamp": 1770494783,
+      "protocol": 0,
+      "apyBps": 1572,
+      "adjustedApyBps": 1022
+    },
+    {
+      "timestamp": 1770495084,
+      "protocol": 0,
+      "apyBps": 1525,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770495386,
+      "protocol": 0,
+      "apyBps": 1550,
+      "adjustedApyBps": 1008
+    },
+    {
+      "timestamp": 1770495687,
+      "protocol": 0,
+      "apyBps": 1452,
+      "adjustedApyBps": 944
+    },
+    {
+      "timestamp": 1770495989,
+      "protocol": 0,
+      "apyBps": 1457,
+      "adjustedApyBps": 947
+    },
+    {
+      "timestamp": 1770496290,
+      "protocol": 0,
+      "apyBps": 1591,
+      "adjustedApyBps": 1034
+    },
+    {
+      "timestamp": 1770496592,
+      "protocol": 0,
+      "apyBps": 1545,
+      "adjustedApyBps": 1004
+    },
+    {
+      "timestamp": 1770496894,
+      "protocol": 0,
+      "apyBps": 1421,
+      "adjustedApyBps": 924
+    },
+    {
+      "timestamp": 1770497195,
+      "protocol": 0,
+      "apyBps": 1418,
+      "adjustedApyBps": 922
+    },
+    {
+      "timestamp": 1770497496,
+      "protocol": 0,
+      "apyBps": 1506,
+      "adjustedApyBps": 979
+    },
+    {
+      "timestamp": 1770497797,
+      "protocol": 0,
+      "apyBps": 1494,
+      "adjustedApyBps": 971
+    },
+    {
+      "timestamp": 1770498099,
+      "protocol": 0,
+      "apyBps": 1547,
+      "adjustedApyBps": 1006
+    },
+    {
+      "timestamp": 1770498399,
+      "protocol": 0,
+      "apyBps": 1533,
+      "adjustedApyBps": 996
+    },
+    {
+      "timestamp": 1770498700,
+      "protocol": 0,
+      "apyBps": 1511,
+      "adjustedApyBps": 982
+    },
+    {
+      "timestamp": 1770499002,
+      "protocol": 0,
+      "apyBps": 1465,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770499303,
+      "protocol": 0,
+      "apyBps": 1416,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770499604,
+      "protocol": 0,
+      "apyBps": 1482,
+      "adjustedApyBps": 963
+    },
+    {
+      "timestamp": 1770499905,
+      "protocol": 0,
+      "apyBps": 1470,
+      "adjustedApyBps": 956
+    },
+    {
+      "timestamp": 1770500208,
+      "protocol": 0,
+      "apyBps": 1434,
+      "adjustedApyBps": 932
+    },
+    {
+      "timestamp": 1770500509,
+      "protocol": 0,
+      "apyBps": 1444,
+      "adjustedApyBps": 939
+    },
+    {
+      "timestamp": 1770500810,
+      "protocol": 0,
+      "apyBps": 1433,
+      "adjustedApyBps": 931
+    },
+    {
+      "timestamp": 1770501111,
+      "protocol": 0,
+      "apyBps": 1559,
+      "adjustedApyBps": 1013
+    },
+    {
+      "timestamp": 1770501413,
+      "protocol": 0,
+      "apyBps": 1547,
+      "adjustedApyBps": 1006
+    },
+    {
+      "timestamp": 1770501714,
+      "protocol": 0,
+      "apyBps": 1424,
+      "adjustedApyBps": 926
+    },
+    {
+      "timestamp": 1770502015,
+      "protocol": 0,
+      "apyBps": 1568,
+      "adjustedApyBps": 1019
+    },
+    {
+      "timestamp": 1770502316,
+      "protocol": 0,
+      "apyBps": 1482,
+      "adjustedApyBps": 963
+    },
+    {
+      "timestamp": 1770502617,
+      "protocol": 0,
+      "apyBps": 1430,
+      "adjustedApyBps": 930
+    },
+    {
+      "timestamp": 1770502918,
+      "protocol": 0,
+      "apyBps": 1589,
+      "adjustedApyBps": 1033
+    },
+    {
+      "timestamp": 1770503220,
+      "protocol": 0,
+      "apyBps": 1577,
+      "adjustedApyBps": 1025
+    },
+    {
+      "timestamp": 1770503523,
+      "protocol": 0,
+      "apyBps": 1534,
+      "adjustedApyBps": 997
+    },
+    {
+      "timestamp": 1770503824,
+      "protocol": 0,
+      "apyBps": 1469,
+      "adjustedApyBps": 955
+    },
+    {
+      "timestamp": 1770504125,
+      "protocol": 0,
+      "apyBps": 1534,
+      "adjustedApyBps": 997
+    },
+    {
+      "timestamp": 1770504426,
+      "protocol": 0,
+      "apyBps": 1467,
+      "adjustedApyBps": 954
+    },
+    {
+      "timestamp": 1770504727,
+      "protocol": 0,
+      "apyBps": 1453,
+      "adjustedApyBps": 944
+    },
+    {
+      "timestamp": 1770505028,
+      "protocol": 0,
+      "apyBps": 1449,
+      "adjustedApyBps": 942
+    },
+    {
+      "timestamp": 1770505329,
+      "protocol": 0,
+      "apyBps": 1557,
+      "adjustedApyBps": 1012
+    },
+    {
+      "timestamp": 1770505630,
+      "protocol": 0,
+      "apyBps": 1464,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770505931,
+      "protocol": 0,
+      "apyBps": 1481,
+      "adjustedApyBps": 963
+    },
+    {
+      "timestamp": 1770506232,
+      "protocol": 0,
+      "apyBps": 1429,
+      "adjustedApyBps": 929
+    },
+    {
+      "timestamp": 1770506534,
+      "protocol": 0,
+      "apyBps": 1591,
+      "adjustedApyBps": 1034
+    },
+    {
+      "timestamp": 1770506835,
+      "protocol": 0,
+      "apyBps": 1454,
+      "adjustedApyBps": 945
+    },
+    {
+      "timestamp": 1770507138,
+      "protocol": 0,
+      "apyBps": 1439,
+      "adjustedApyBps": 935
+    },
+    {
+      "timestamp": 1770507439,
+      "protocol": 0,
+      "apyBps": 1565,
+      "adjustedApyBps": 1017
+    },
+    {
+      "timestamp": 1770507741,
+      "protocol": 0,
+      "apyBps": 1545,
+      "adjustedApyBps": 1004
+    },
+    {
+      "timestamp": 1770508042,
+      "protocol": 0,
+      "apyBps": 1454,
+      "adjustedApyBps": 945
+    },
+    {
+      "timestamp": 1770508343,
+      "protocol": 0,
+      "apyBps": 1593,
+      "adjustedApyBps": 1035
+    },
+    {
+      "timestamp": 1770508644,
+      "protocol": 0,
+      "apyBps": 1529,
+      "adjustedApyBps": 994
+    },
+    {
+      "timestamp": 1770508946,
+      "protocol": 0,
+      "apyBps": 1546,
+      "adjustedApyBps": 1005
+    },
+    {
+      "timestamp": 1770509247,
+      "protocol": 0,
+      "apyBps": 1555,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770509548,
+      "protocol": 0,
+      "apyBps": 1567,
+      "adjustedApyBps": 1019
+    },
+    {
+      "timestamp": 1770509849,
+      "protocol": 0,
+      "apyBps": 1497,
+      "adjustedApyBps": 973
+    },
+    {
+      "timestamp": 1770510150,
+      "protocol": 0,
+      "apyBps": 1426,
+      "adjustedApyBps": 927
+    },
+    {
+      "timestamp": 1770510452,
+      "protocol": 0,
+      "apyBps": 1531,
+      "adjustedApyBps": 995
+    },
+    {
+      "timestamp": 1770510756,
+      "protocol": 0,
+      "apyBps": 1494,
+      "adjustedApyBps": 971
+    },
+    {
+      "timestamp": 1770511057,
+      "protocol": 0,
+      "apyBps": 1556,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770511358,
+      "protocol": 0,
+      "apyBps": 1415,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770511659,
+      "protocol": 0,
+      "apyBps": 1475,
+      "adjustedApyBps": 959
+    },
+    {
+      "timestamp": 1770511960,
+      "protocol": 0,
+      "apyBps": 1527,
+      "adjustedApyBps": 993
+    },
+    {
+      "timestamp": 1770512261,
+      "protocol": 0,
+      "apyBps": 1456,
+      "adjustedApyBps": 946
+    },
+    {
+      "timestamp": 1770512562,
+      "protocol": 0,
+      "apyBps": 1443,
+      "adjustedApyBps": 938
+    },
+    {
+      "timestamp": 1770512863,
+      "protocol": 0,
+      "apyBps": 1474,
+      "adjustedApyBps": 958
+    },
+    {
+      "timestamp": 1770513164,
+      "protocol": 0,
+      "apyBps": 1539,
+      "adjustedApyBps": 1000
+    },
+    {
+      "timestamp": 1770513465,
+      "protocol": 0,
+      "apyBps": 1417,
+      "adjustedApyBps": 921
+    },
+    {
+      "timestamp": 1770513766,
+      "protocol": 0,
+      "apyBps": 1430,
+      "adjustedApyBps": 930
+    },
+    {
+      "timestamp": 1770514068,
+      "protocol": 0,
+      "apyBps": 1588,
+      "adjustedApyBps": 1032
+    },
+    {
+      "timestamp": 1770514371,
+      "protocol": 0,
+      "apyBps": 1488,
+      "adjustedApyBps": 967
+    },
+    {
+      "timestamp": 1770514672,
+      "protocol": 0,
+      "apyBps": 1588,
+      "adjustedApyBps": 1032
+    },
+    {
+      "timestamp": 1770514973,
+      "protocol": 0,
+      "apyBps": 1410,
+      "adjustedApyBps": 917
+    },
+    {
+      "timestamp": 1770515274,
+      "protocol": 0,
+      "apyBps": 1416,
+      "adjustedApyBps": 920
+    },
+    {
+      "timestamp": 1770515575,
+      "protocol": 0,
+      "apyBps": 1515,
+      "adjustedApyBps": 985
+    },
+    {
+      "timestamp": 1770515876,
+      "protocol": 0,
+      "apyBps": 1412,
+      "adjustedApyBps": 918
+    },
+    {
+      "timestamp": 1770516178,
+      "protocol": 0,
+      "apyBps": 1457,
+      "adjustedApyBps": 947
+    },
+    {
+      "timestamp": 1770516479,
+      "protocol": 0,
+      "apyBps": 1544,
+      "adjustedApyBps": 1004
+    },
+    {
+      "timestamp": 1770516781,
+      "protocol": 0,
+      "apyBps": 1593,
+      "adjustedApyBps": 1035
+    },
+    {
+      "timestamp": 1770517084,
+      "protocol": 0,
+      "apyBps": 1496,
+      "adjustedApyBps": 972
+    },
+    {
+      "timestamp": 1770517386,
+      "protocol": 0,
+      "apyBps": 1526,
+      "adjustedApyBps": 992
+    },
+    {
+      "timestamp": 1770517688,
+      "protocol": 0,
+      "apyBps": 1465,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770517989,
+      "protocol": 0,
+      "apyBps": 1525,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770518291,
+      "protocol": 0,
+      "apyBps": 1575,
+      "adjustedApyBps": 1024
+    },
+    {
+      "timestamp": 1770518592,
+      "protocol": 0,
+      "apyBps": 1596,
+      "adjustedApyBps": 1037
+    },
+    {
+      "timestamp": 1770518894,
+      "protocol": 0,
+      "apyBps": 1420,
+      "adjustedApyBps": 923
+    },
+    {
+      "timestamp": 1770519196,
+      "protocol": 0,
+      "apyBps": 1454,
+      "adjustedApyBps": 945
+    },
+    {
+      "timestamp": 1770519497,
+      "protocol": 0,
+      "apyBps": 1465,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770519798,
+      "protocol": 0,
+      "apyBps": 1555,
+      "adjustedApyBps": 1011
+    },
+    {
+      "timestamp": 1770520100,
+      "protocol": 0,
+      "apyBps": 1464,
+      "adjustedApyBps": 952
+    },
+    {
+      "timestamp": 1770520401,
+      "protocol": 0,
+      "apyBps": 1459,
+      "adjustedApyBps": 948
+    },
+    {
+      "timestamp": 1770520703,
+      "protocol": 0,
+      "apyBps": 1510,
+      "adjustedApyBps": 982
+    },
+    {
+      "timestamp": 1770521004,
+      "protocol": 0,
+      "apyBps": 1471,
+      "adjustedApyBps": 956
+    },
+    {
+      "timestamp": 1770521305,
+      "protocol": 0,
+      "apyBps": 1478,
+      "adjustedApyBps": 961
+    },
+    {
+      "timestamp": 1770521608,
+      "protocol": 0,
+      "apyBps": 1521,
+      "adjustedApyBps": 989
+    },
+    {
+      "timestamp": 1770521910,
+      "protocol": 0,
+      "apyBps": 1430,
+      "adjustedApyBps": 930
+    },
+    {
+      "timestamp": 1770522212,
+      "protocol": 0,
+      "apyBps": 1586,
+      "adjustedApyBps": 1031
+    },
+    {
+      "timestamp": 1770522513,
+      "protocol": 0,
+      "apyBps": 1597,
+      "adjustedApyBps": 1038
+    },
+    {
+      "timestamp": 1770522814,
+      "protocol": 0,
+      "apyBps": 1474,
+      "adjustedApyBps": 958
+    },
+    {
+      "timestamp": 1770523115,
+      "protocol": 0,
+      "apyBps": 1525,
+      "adjustedApyBps": 991
+    },
+    {
+      "timestamp": 1770523416,
+      "protocol": 0,
+      "apyBps": 1492,
+      "adjustedApyBps": 970
+    },
+    {
+      "timestamp": 1770523718,
+      "protocol": 0,
+      "apyBps": 1491,
+      "adjustedApyBps": 969
+    },
+    {
+      "timestamp": 1770524019,
+      "protocol": 0,
+      "apyBps": 1468,
+      "adjustedApyBps": 954
+    },
+    {
+      "timestamp": 1770524320,
+      "protocol": 0,
+      "apyBps": 1574,
+      "adjustedApyBps": 1023
+    },
+    {
+      "timestamp": 1770524622,
+      "protocol": 0,
+      "apyBps": 1561,
+      "adjustedApyBps": 1015
+    },
+    {
+      "timestamp": 1770524923,
+      "protocol": 0,
+      "apyBps": 1582,
+      "adjustedApyBps": 1028
+    },
+    {
+      "timestamp": 1770525224,
+      "protocol": 0,
+      "apyBps": 1567,
+      "adjustedApyBps": 1019
+    },
+    {
+      "timestamp": 1770525527,
+      "protocol": 0,
+      "apyBps": 1497,
+      "adjustedApyBps": 973
+    },
+    {
+      "timestamp": 1770525824,
+      "protocol": 0,
+      "apyBps": 1507,
+      "adjustedApyBps": 980,
+      "tvl": 50004364
+    },
+    {
+      "timestamp": 1770439311,
+      "protocol": 2,
+      "apyBps": 1162,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770439612,
+      "protocol": 2,
+      "apyBps": 1229,
+      "adjustedApyBps": 860
+    },
+    {
+      "timestamp": 1770439914,
+      "protocol": 2,
+      "apyBps": 1137,
+      "adjustedApyBps": 796
+    },
+    {
+      "timestamp": 1770440215,
+      "protocol": 2,
+      "apyBps": 1147,
+      "adjustedApyBps": 803
+    },
+    {
+      "timestamp": 1770440517,
+      "protocol": 2,
+      "apyBps": 1243,
+      "adjustedApyBps": 870
+    },
+    {
+      "timestamp": 1770440818,
+      "protocol": 2,
+      "apyBps": 1205,
+      "adjustedApyBps": 844
+    },
+    {
+      "timestamp": 1770441119,
+      "protocol": 2,
+      "apyBps": 1250,
+      "adjustedApyBps": 875
+    },
+    {
+      "timestamp": 1770441420,
+      "protocol": 2,
+      "apyBps": 1207,
+      "adjustedApyBps": 845
+    },
+    {
+      "timestamp": 1770441721,
+      "protocol": 2,
+      "apyBps": 1130,
+      "adjustedApyBps": 791
+    },
+    {
+      "timestamp": 1770442023,
+      "protocol": 2,
+      "apyBps": 1209,
+      "adjustedApyBps": 846
+    },
+    {
+      "timestamp": 1770442324,
+      "protocol": 2,
+      "apyBps": 1230,
+      "adjustedApyBps": 861
+    },
+    {
+      "timestamp": 1770442625,
+      "protocol": 2,
+      "apyBps": 1177,
+      "adjustedApyBps": 824
+    },
+    {
+      "timestamp": 1770442927,
+      "protocol": 2,
+      "apyBps": 1137,
+      "adjustedApyBps": 796
+    },
+    {
+      "timestamp": 1770443229,
+      "protocol": 2,
+      "apyBps": 1267,
+      "adjustedApyBps": 887
+    },
+    {
+      "timestamp": 1770443530,
+      "protocol": 2,
+      "apyBps": 1220,
+      "adjustedApyBps": 854
+    },
+    {
+      "timestamp": 1770443831,
+      "protocol": 2,
+      "apyBps": 1235,
+      "adjustedApyBps": 865
+    },
+    {
+      "timestamp": 1770444132,
+      "protocol": 2,
+      "apyBps": 1266,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770444433,
+      "protocol": 2,
+      "apyBps": 1193,
+      "adjustedApyBps": 835
+    },
+    {
+      "timestamp": 1770444734,
+      "protocol": 2,
+      "apyBps": 1141,
+      "adjustedApyBps": 799
+    },
+    {
+      "timestamp": 1770445035,
+      "protocol": 2,
+      "apyBps": 1148,
+      "adjustedApyBps": 804
+    },
+    {
+      "timestamp": 1770445336,
+      "protocol": 2,
+      "apyBps": 1157,
+      "adjustedApyBps": 810
+    },
+    {
+      "timestamp": 1770445638,
+      "protocol": 2,
+      "apyBps": 1205,
+      "adjustedApyBps": 844
+    },
+    {
+      "timestamp": 1770445939,
+      "protocol": 2,
+      "apyBps": 1149,
+      "adjustedApyBps": 804
+    },
+    {
+      "timestamp": 1770446240,
+      "protocol": 2,
+      "apyBps": 1210,
+      "adjustedApyBps": 847
+    },
+    {
+      "timestamp": 1770446541,
+      "protocol": 2,
+      "apyBps": 1215,
+      "adjustedApyBps": 851
+    },
+    {
+      "timestamp": 1770446843,
+      "protocol": 2,
+      "apyBps": 1261,
+      "adjustedApyBps": 883
+    },
+    {
+      "timestamp": 1770447144,
+      "protocol": 2,
+      "apyBps": 1169,
+      "adjustedApyBps": 818
+    },
+    {
+      "timestamp": 1770447445,
+      "protocol": 2,
+      "apyBps": 1161,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770447748,
+      "protocol": 2,
+      "apyBps": 1224,
+      "adjustedApyBps": 857
+    },
+    {
+      "timestamp": 1770448049,
+      "protocol": 2,
+      "apyBps": 1161,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770448350,
+      "protocol": 2,
+      "apyBps": 1264,
+      "adjustedApyBps": 885
+    },
+    {
+      "timestamp": 1770448651,
+      "protocol": 2,
+      "apyBps": 1186,
+      "adjustedApyBps": 830
+    },
+    {
+      "timestamp": 1770448952,
+      "protocol": 2,
+      "apyBps": 1126,
+      "adjustedApyBps": 788
+    },
+    {
+      "timestamp": 1770449254,
+      "protocol": 2,
+      "apyBps": 1131,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770449555,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770449856,
+      "protocol": 2,
+      "apyBps": 1274,
+      "adjustedApyBps": 892
+    },
+    {
+      "timestamp": 1770450157,
+      "protocol": 2,
+      "apyBps": 1153,
+      "adjustedApyBps": 807
+    },
+    {
+      "timestamp": 1770450458,
+      "protocol": 2,
+      "apyBps": 1134,
+      "adjustedApyBps": 794
+    },
+    {
+      "timestamp": 1770450760,
+      "protocol": 2,
+      "apyBps": 1207,
+      "adjustedApyBps": 845
+    },
+    {
+      "timestamp": 1770451061,
+      "protocol": 2,
+      "apyBps": 1274,
+      "adjustedApyBps": 892
+    },
+    {
+      "timestamp": 1770451363,
       "protocol": 2,
       "apyBps": 1189,
       "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770451665,
+      "protocol": 2,
+      "apyBps": 1185,
+      "adjustedApyBps": 830
+    },
+    {
+      "timestamp": 1770451966,
+      "protocol": 2,
+      "apyBps": 1130,
+      "adjustedApyBps": 791
+    },
+    {
+      "timestamp": 1770452267,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770452568,
+      "protocol": 2,
+      "apyBps": 1238,
+      "adjustedApyBps": 867
+    },
+    {
+      "timestamp": 1770452869,
+      "protocol": 2,
+      "apyBps": 1152,
+      "adjustedApyBps": 806
+    },
+    {
+      "timestamp": 1770453171,
+      "protocol": 2,
+      "apyBps": 1213,
+      "adjustedApyBps": 849
+    },
+    {
+      "timestamp": 1770453472,
+      "protocol": 2,
+      "apyBps": 1217,
+      "adjustedApyBps": 852
+    },
+    {
+      "timestamp": 1770453773,
+      "protocol": 2,
+      "apyBps": 1152,
+      "adjustedApyBps": 806
+    },
+    {
+      "timestamp": 1770454074,
+      "protocol": 2,
+      "apyBps": 1265,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770454375,
+      "protocol": 2,
+      "apyBps": 1139,
+      "adjustedApyBps": 797
+    },
+    {
+      "timestamp": 1770454676,
+      "protocol": 2,
+      "apyBps": 1160,
+      "adjustedApyBps": 812
+    },
+    {
+      "timestamp": 1770454978,
+      "protocol": 2,
+      "apyBps": 1201,
+      "adjustedApyBps": 841
+    },
+    {
+      "timestamp": 1770455279,
+      "protocol": 2,
+      "apyBps": 1242,
+      "adjustedApyBps": 869
+    },
+    {
+      "timestamp": 1770455581,
+      "protocol": 2,
+      "apyBps": 1170,
+      "adjustedApyBps": 819
+    },
+    {
+      "timestamp": 1770455882,
+      "protocol": 2,
+      "apyBps": 1210,
+      "adjustedApyBps": 847
+    },
+    {
+      "timestamp": 1770456187,
+      "protocol": 2,
+      "apyBps": 1174,
+      "adjustedApyBps": 822
+    },
+    {
+      "timestamp": 1770456489,
+      "protocol": 2,
+      "apyBps": 1169,
+      "adjustedApyBps": 818
+    },
+    {
+      "timestamp": 1770456791,
+      "protocol": 2,
+      "apyBps": 1257,
+      "adjustedApyBps": 880
+    },
+    {
+      "timestamp": 1770457092,
+      "protocol": 2,
+      "apyBps": 1274,
+      "adjustedApyBps": 892
+    },
+    {
+      "timestamp": 1770457393,
+      "protocol": 2,
+      "apyBps": 1228,
+      "adjustedApyBps": 860
+    },
+    {
+      "timestamp": 1770457695,
+      "protocol": 2,
+      "apyBps": 1182,
+      "adjustedApyBps": 827
+    },
+    {
+      "timestamp": 1770457996,
+      "protocol": 2,
+      "apyBps": 1203,
+      "adjustedApyBps": 842
+    },
+    {
+      "timestamp": 1770458297,
+      "protocol": 2,
+      "apyBps": 1203,
+      "adjustedApyBps": 842
+    },
+    {
+      "timestamp": 1770458598,
+      "protocol": 2,
+      "apyBps": 1244,
+      "adjustedApyBps": 871
+    },
+    {
+      "timestamp": 1770458899,
+      "protocol": 2,
+      "apyBps": 1205,
+      "adjustedApyBps": 844
+    },
+    {
+      "timestamp": 1770459200,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770459501,
+      "protocol": 2,
+      "apyBps": 1162,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770459803,
+      "protocol": 2,
+      "apyBps": 1274,
+      "adjustedApyBps": 892
+    },
+    {
+      "timestamp": 1770460104,
+      "protocol": 2,
+      "apyBps": 1253,
+      "adjustedApyBps": 877
+    },
+    {
+      "timestamp": 1770460406,
+      "protocol": 2,
+      "apyBps": 1202,
+      "adjustedApyBps": 841
+    },
+    {
+      "timestamp": 1770460707,
+      "protocol": 2,
+      "apyBps": 1267,
+      "adjustedApyBps": 887
+    },
+    {
+      "timestamp": 1770461010,
+      "protocol": 2,
+      "apyBps": 1177,
+      "adjustedApyBps": 824
+    },
+    {
+      "timestamp": 1770461311,
+      "protocol": 2,
+      "apyBps": 1237,
+      "adjustedApyBps": 866
+    },
+    {
+      "timestamp": 1770461612,
+      "protocol": 2,
+      "apyBps": 1251,
+      "adjustedApyBps": 876
+    },
+    {
+      "timestamp": 1770461913,
+      "protocol": 2,
+      "apyBps": 1217,
+      "adjustedApyBps": 852
+    },
+    {
+      "timestamp": 1770462214,
+      "protocol": 2,
+      "apyBps": 1132,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770462516,
+      "protocol": 2,
+      "apyBps": 1131,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770462817,
+      "protocol": 2,
+      "apyBps": 1223,
+      "adjustedApyBps": 856
+    },
+    {
+      "timestamp": 1770463118,
+      "protocol": 2,
+      "apyBps": 1255,
+      "adjustedApyBps": 879
+    },
+    {
+      "timestamp": 1770463419,
+      "protocol": 2,
+      "apyBps": 1223,
+      "adjustedApyBps": 856
+    },
+    {
+      "timestamp": 1770463720,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770464021,
+      "protocol": 2,
+      "apyBps": 1147,
+      "adjustedApyBps": 803
+    },
+    {
+      "timestamp": 1770464322,
+      "protocol": 2,
+      "apyBps": 1146,
+      "adjustedApyBps": 802
+    },
+    {
+      "timestamp": 1770464623,
+      "protocol": 2,
+      "apyBps": 1207,
+      "adjustedApyBps": 845
+    },
+    {
+      "timestamp": 1770464925,
+      "protocol": 2,
+      "apyBps": 1160,
+      "adjustedApyBps": 812
+    },
+    {
+      "timestamp": 1770465226,
+      "protocol": 2,
+      "apyBps": 1237,
+      "adjustedApyBps": 866
+    },
+    {
+      "timestamp": 1770465527,
+      "protocol": 2,
+      "apyBps": 1271,
+      "adjustedApyBps": 890
+    },
+    {
+      "timestamp": 1770465828,
+      "protocol": 2,
+      "apyBps": 1216,
+      "adjustedApyBps": 851
+    },
+    {
+      "timestamp": 1770466131,
+      "protocol": 2,
+      "apyBps": 1209,
+      "adjustedApyBps": 846
+    },
+    {
+      "timestamp": 1770466432,
+      "protocol": 2,
+      "apyBps": 1182,
+      "adjustedApyBps": 827
+    },
+    {
+      "timestamp": 1770466733,
+      "protocol": 2,
+      "apyBps": 1243,
+      "adjustedApyBps": 870
+    },
+    {
+      "timestamp": 1770467035,
+      "protocol": 2,
+      "apyBps": 1182,
+      "adjustedApyBps": 827
+    },
+    {
+      "timestamp": 1770467336,
+      "protocol": 2,
+      "apyBps": 1197,
+      "adjustedApyBps": 838
+    },
+    {
+      "timestamp": 1770467637,
+      "protocol": 2,
+      "apyBps": 1180,
+      "adjustedApyBps": 826
+    },
+    {
+      "timestamp": 1770467938,
+      "protocol": 2,
+      "apyBps": 1244,
+      "adjustedApyBps": 871
+    },
+    {
+      "timestamp": 1770468240,
+      "protocol": 2,
+      "apyBps": 1191,
+      "adjustedApyBps": 834
+    },
+    {
+      "timestamp": 1770468541,
+      "protocol": 2,
+      "apyBps": 1152,
+      "adjustedApyBps": 806
+    },
+    {
+      "timestamp": 1770468842,
+      "protocol": 2,
+      "apyBps": 1189,
+      "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770469144,
+      "protocol": 2,
+      "apyBps": 1133,
+      "adjustedApyBps": 793
+    },
+    {
+      "timestamp": 1770469445,
+      "protocol": 2,
+      "apyBps": 1267,
+      "adjustedApyBps": 887
+    },
+    {
+      "timestamp": 1770469750,
+      "protocol": 2,
+      "apyBps": 1155,
+      "adjustedApyBps": 809
+    },
+    {
+      "timestamp": 1770470052,
+      "protocol": 2,
+      "apyBps": 1139,
+      "adjustedApyBps": 797
+    },
+    {
+      "timestamp": 1770470353,
+      "protocol": 2,
+      "apyBps": 1212,
+      "adjustedApyBps": 848
+    },
+    {
+      "timestamp": 1770470655,
+      "protocol": 2,
+      "apyBps": 1174,
+      "adjustedApyBps": 822
+    },
+    {
+      "timestamp": 1770470956,
+      "protocol": 2,
+      "apyBps": 1247,
+      "adjustedApyBps": 873
+    },
+    {
+      "timestamp": 1770471257,
+      "protocol": 2,
+      "apyBps": 1239,
+      "adjustedApyBps": 867
+    },
+    {
+      "timestamp": 1770471558,
+      "protocol": 2,
+      "apyBps": 1135,
+      "adjustedApyBps": 795
+    },
+    {
+      "timestamp": 1770471859,
+      "protocol": 2,
+      "apyBps": 1266,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770472160,
+      "protocol": 2,
+      "apyBps": 1265,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770472461,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770472763,
+      "protocol": 2,
+      "apyBps": 1153,
+      "adjustedApyBps": 807
+    },
+    {
+      "timestamp": 1770473064,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770473365,
+      "protocol": 2,
+      "apyBps": 1169,
+      "adjustedApyBps": 818
+    },
+    {
+      "timestamp": 1770473670,
+      "protocol": 2,
+      "apyBps": 1222,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770473971,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770474273,
+      "protocol": 2,
+      "apyBps": 1218,
+      "adjustedApyBps": 853
+    },
+    {
+      "timestamp": 1770474575,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770474876,
+      "protocol": 2,
+      "apyBps": 1244,
+      "adjustedApyBps": 871
+    },
+    {
+      "timestamp": 1770475177,
+      "protocol": 2,
+      "apyBps": 1214,
+      "adjustedApyBps": 850
+    },
+    {
+      "timestamp": 1770475479,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770475780,
+      "protocol": 2,
+      "apyBps": 1266,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770476082,
+      "protocol": 2,
+      "apyBps": 1197,
+      "adjustedApyBps": 838
+    },
+    {
+      "timestamp": 1770476383,
+      "protocol": 2,
+      "apyBps": 1131,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770476684,
+      "protocol": 2,
+      "apyBps": 1258,
+      "adjustedApyBps": 881
+    },
+    {
+      "timestamp": 1770476985,
+      "protocol": 2,
+      "apyBps": 1125,
+      "adjustedApyBps": 788
+    },
+    {
+      "timestamp": 1770477287,
+      "protocol": 2,
+      "apyBps": 1270,
+      "adjustedApyBps": 889
+    },
+    {
+      "timestamp": 1770477589,
+      "protocol": 2,
+      "apyBps": 1218,
+      "adjustedApyBps": 853
+    },
+    {
+      "timestamp": 1770477891,
+      "protocol": 2,
+      "apyBps": 1134,
+      "adjustedApyBps": 794
+    },
+    {
+      "timestamp": 1770478192,
+      "protocol": 2,
+      "apyBps": 1270,
+      "adjustedApyBps": 889
+    },
+    {
+      "timestamp": 1770478493,
+      "protocol": 2,
+      "apyBps": 1263,
+      "adjustedApyBps": 884
+    },
+    {
+      "timestamp": 1770478794,
+      "protocol": 2,
+      "apyBps": 1164,
+      "adjustedApyBps": 815
+    },
+    {
+      "timestamp": 1770479096,
+      "protocol": 2,
+      "apyBps": 1151,
+      "adjustedApyBps": 806
+    },
+    {
+      "timestamp": 1770479397,
+      "protocol": 2,
+      "apyBps": 1220,
+      "adjustedApyBps": 854
+    },
+    {
+      "timestamp": 1770479699,
+      "protocol": 2,
+      "apyBps": 1164,
+      "adjustedApyBps": 815
+    },
+    {
+      "timestamp": 1770480000,
+      "protocol": 2,
+      "apyBps": 1194,
+      "adjustedApyBps": 836
+    },
+    {
+      "timestamp": 1770480302,
+      "protocol": 2,
+      "apyBps": 1126,
+      "adjustedApyBps": 788
+    },
+    {
+      "timestamp": 1770480603,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770480904,
+      "protocol": 2,
+      "apyBps": 1183,
+      "adjustedApyBps": 828
+    },
+    {
+      "timestamp": 1770481217,
+      "protocol": 2,
+      "apyBps": 1198,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770481519,
+      "protocol": 2,
+      "apyBps": 1254,
+      "adjustedApyBps": 878
+    },
+    {
+      "timestamp": 1770481820,
+      "protocol": 2,
+      "apyBps": 1196,
+      "adjustedApyBps": 837
+    },
+    {
+      "timestamp": 1770482121,
+      "protocol": 2,
+      "apyBps": 1267,
+      "adjustedApyBps": 887
+    },
+    {
+      "timestamp": 1770482422,
+      "protocol": 2,
+      "apyBps": 1257,
+      "adjustedApyBps": 880
+    },
+    {
+      "timestamp": 1770482723,
+      "protocol": 2,
+      "apyBps": 1158,
+      "adjustedApyBps": 811
+    },
+    {
+      "timestamp": 1770483024,
+      "protocol": 2,
+      "apyBps": 1235,
+      "adjustedApyBps": 865
+    },
+    {
+      "timestamp": 1770483326,
+      "protocol": 2,
+      "apyBps": 1269,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770483627,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770483928,
+      "protocol": 2,
+      "apyBps": 1272,
+      "adjustedApyBps": 890
+    },
+    {
+      "timestamp": 1770484229,
+      "protocol": 2,
+      "apyBps": 1264,
+      "adjustedApyBps": 885
+    },
+    {
+      "timestamp": 1770484530,
+      "protocol": 2,
+      "apyBps": 1215,
+      "adjustedApyBps": 851
+    },
+    {
+      "timestamp": 1770484833,
+      "protocol": 2,
+      "apyBps": 1161,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770485135,
+      "protocol": 2,
+      "apyBps": 1152,
+      "adjustedApyBps": 806
+    },
+    {
+      "timestamp": 1770485437,
+      "protocol": 2,
+      "apyBps": 1265,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770485739,
+      "protocol": 2,
+      "apyBps": 1271,
+      "adjustedApyBps": 890
+    },
+    {
+      "timestamp": 1770486040,
+      "protocol": 2,
+      "apyBps": 1162,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770486342,
+      "protocol": 2,
+      "apyBps": 1263,
+      "adjustedApyBps": 884
+    },
+    {
+      "timestamp": 1770486643,
+      "protocol": 2,
+      "apyBps": 1270,
+      "adjustedApyBps": 889
+    },
+    {
+      "timestamp": 1770486944,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770487246,
+      "protocol": 2,
+      "apyBps": 1150,
+      "adjustedApyBps": 805
+    },
+    {
+      "timestamp": 1770487547,
+      "protocol": 2,
+      "apyBps": 1241,
+      "adjustedApyBps": 869
+    },
+    {
+      "timestamp": 1770487848,
+      "protocol": 2,
+      "apyBps": 1226,
+      "adjustedApyBps": 858
+    },
+    {
+      "timestamp": 1770488149,
+      "protocol": 2,
+      "apyBps": 1193,
+      "adjustedApyBps": 835
+    },
+    {
+      "timestamp": 1770488450,
+      "protocol": 2,
+      "apyBps": 1188,
+      "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770488753,
+      "protocol": 2,
+      "apyBps": 1125,
+      "adjustedApyBps": 788
+    },
+    {
+      "timestamp": 1770489055,
+      "protocol": 2,
+      "apyBps": 1193,
+      "adjustedApyBps": 835
+    },
+    {
+      "timestamp": 1770489356,
+      "protocol": 2,
+      "apyBps": 1165,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770489657,
+      "protocol": 2,
+      "apyBps": 1261,
+      "adjustedApyBps": 883
+    },
+    {
+      "timestamp": 1770489958,
+      "protocol": 2,
+      "apyBps": 1179,
+      "adjustedApyBps": 825
+    },
+    {
+      "timestamp": 1770490259,
+      "protocol": 2,
+      "apyBps": 1224,
+      "adjustedApyBps": 857
+    },
+    {
+      "timestamp": 1770490560,
+      "protocol": 2,
+      "apyBps": 1248,
+      "adjustedApyBps": 874
+    },
+    {
+      "timestamp": 1770490862,
+      "protocol": 2,
+      "apyBps": 1126,
+      "adjustedApyBps": 788
+    },
+    {
+      "timestamp": 1770491163,
+      "protocol": 2,
+      "apyBps": 1181,
+      "adjustedApyBps": 827
+    },
+    {
+      "timestamp": 1770491465,
+      "protocol": 2,
+      "apyBps": 1205,
+      "adjustedApyBps": 844
+    },
+    {
+      "timestamp": 1770491766,
+      "protocol": 2,
+      "apyBps": 1148,
+      "adjustedApyBps": 804
+    },
+    {
+      "timestamp": 1770492068,
+      "protocol": 2,
+      "apyBps": 1208,
+      "adjustedApyBps": 846
+    },
+    {
+      "timestamp": 1770492372,
+      "protocol": 2,
+      "apyBps": 1158,
+      "adjustedApyBps": 811
+    },
+    {
+      "timestamp": 1770492674,
+      "protocol": 2,
+      "apyBps": 1135,
+      "adjustedApyBps": 795
+    },
+    {
+      "timestamp": 1770492975,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770493276,
+      "protocol": 2,
+      "apyBps": 1245,
+      "adjustedApyBps": 872
+    },
+    {
+      "timestamp": 1770493578,
+      "protocol": 2,
+      "apyBps": 1214,
+      "adjustedApyBps": 850
+    },
+    {
+      "timestamp": 1770493879,
+      "protocol": 2,
+      "apyBps": 1208,
+      "adjustedApyBps": 846
+    },
+    {
+      "timestamp": 1770494180,
+      "protocol": 2,
+      "apyBps": 1258,
+      "adjustedApyBps": 881
+    },
+    {
+      "timestamp": 1770494481,
+      "protocol": 2,
+      "apyBps": 1211,
+      "adjustedApyBps": 848
+    },
+    {
+      "timestamp": 1770494783,
+      "protocol": 2,
+      "apyBps": 1230,
+      "adjustedApyBps": 861
+    },
+    {
+      "timestamp": 1770495084,
+      "protocol": 2,
+      "apyBps": 1129,
+      "adjustedApyBps": 790
+    },
+    {
+      "timestamp": 1770495386,
+      "protocol": 2,
+      "apyBps": 1220,
+      "adjustedApyBps": 854
+    },
+    {
+      "timestamp": 1770495687,
+      "protocol": 2,
+      "apyBps": 1226,
+      "adjustedApyBps": 858
+    },
+    {
+      "timestamp": 1770495989,
+      "protocol": 2,
+      "apyBps": 1248,
+      "adjustedApyBps": 874
+    },
+    {
+      "timestamp": 1770496290,
+      "protocol": 2,
+      "apyBps": 1177,
+      "adjustedApyBps": 824
+    },
+    {
+      "timestamp": 1770496592,
+      "protocol": 2,
+      "apyBps": 1142,
+      "adjustedApyBps": 799
+    },
+    {
+      "timestamp": 1770496894,
+      "protocol": 2,
+      "apyBps": 1133,
+      "adjustedApyBps": 793
+    },
+    {
+      "timestamp": 1770497195,
+      "protocol": 2,
+      "apyBps": 1270,
+      "adjustedApyBps": 889
+    },
+    {
+      "timestamp": 1770497496,
+      "protocol": 2,
+      "apyBps": 1188,
+      "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770497797,
+      "protocol": 2,
+      "apyBps": 1251,
+      "adjustedApyBps": 876
+    },
+    {
+      "timestamp": 1770498099,
+      "protocol": 2,
+      "apyBps": 1221,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770498399,
+      "protocol": 2,
+      "apyBps": 1153,
+      "adjustedApyBps": 807
+    },
+    {
+      "timestamp": 1770498700,
+      "protocol": 2,
+      "apyBps": 1178,
+      "adjustedApyBps": 825
+    },
+    {
+      "timestamp": 1770499002,
+      "protocol": 2,
+      "apyBps": 1232,
+      "adjustedApyBps": 862
+    },
+    {
+      "timestamp": 1770499303,
+      "protocol": 2,
+      "apyBps": 1239,
+      "adjustedApyBps": 867
+    },
+    {
+      "timestamp": 1770499604,
+      "protocol": 2,
+      "apyBps": 1211,
+      "adjustedApyBps": 848
+    },
+    {
+      "timestamp": 1770499905,
+      "protocol": 2,
+      "apyBps": 1131,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770500208,
+      "protocol": 2,
+      "apyBps": 1241,
+      "adjustedApyBps": 869
+    },
+    {
+      "timestamp": 1770500509,
+      "protocol": 2,
+      "apyBps": 1204,
+      "adjustedApyBps": 843
+    },
+    {
+      "timestamp": 1770500810,
+      "protocol": 2,
+      "apyBps": 1217,
+      "adjustedApyBps": 852
+    },
+    {
+      "timestamp": 1770501111,
+      "protocol": 2,
+      "apyBps": 1219,
+      "adjustedApyBps": 853
+    },
+    {
+      "timestamp": 1770501413,
+      "protocol": 2,
+      "apyBps": 1222,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770501714,
+      "protocol": 2,
+      "apyBps": 1197,
+      "adjustedApyBps": 838
+    },
+    {
+      "timestamp": 1770502015,
+      "protocol": 2,
+      "apyBps": 1260,
+      "adjustedApyBps": 882
+    },
+    {
+      "timestamp": 1770502316,
+      "protocol": 2,
+      "apyBps": 1233,
+      "adjustedApyBps": 863
+    },
+    {
+      "timestamp": 1770502617,
+      "protocol": 2,
+      "apyBps": 1148,
+      "adjustedApyBps": 804
+    },
+    {
+      "timestamp": 1770502918,
+      "protocol": 2,
+      "apyBps": 1203,
+      "adjustedApyBps": 842
+    },
+    {
+      "timestamp": 1770503220,
+      "protocol": 2,
+      "apyBps": 1210,
+      "adjustedApyBps": 847
+    },
+    {
+      "timestamp": 1770503523,
+      "protocol": 2,
+      "apyBps": 1265,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770503824,
+      "protocol": 2,
+      "apyBps": 1173,
+      "adjustedApyBps": 821
+    },
+    {
+      "timestamp": 1770504125,
+      "protocol": 2,
+      "apyBps": 1147,
+      "adjustedApyBps": 803
+    },
+    {
+      "timestamp": 1770504426,
+      "protocol": 2,
+      "apyBps": 1250,
+      "adjustedApyBps": 875
+    },
+    {
+      "timestamp": 1770504727,
+      "protocol": 2,
+      "apyBps": 1150,
+      "adjustedApyBps": 805
+    },
+    {
+      "timestamp": 1770505028,
+      "protocol": 2,
+      "apyBps": 1199,
+      "adjustedApyBps": 839
+    },
+    {
+      "timestamp": 1770505329,
+      "protocol": 2,
+      "apyBps": 1243,
+      "adjustedApyBps": 870
+    },
+    {
+      "timestamp": 1770505630,
+      "protocol": 2,
+      "apyBps": 1222,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770505931,
+      "protocol": 2,
+      "apyBps": 1180,
+      "adjustedApyBps": 826
+    },
+    {
+      "timestamp": 1770506232,
+      "protocol": 2,
+      "apyBps": 1221,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770506534,
+      "protocol": 2,
+      "apyBps": 1164,
+      "adjustedApyBps": 815
+    },
+    {
+      "timestamp": 1770506835,
+      "protocol": 2,
+      "apyBps": 1188,
+      "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770507138,
+      "protocol": 2,
+      "apyBps": 1141,
+      "adjustedApyBps": 799
+    },
+    {
+      "timestamp": 1770507439,
+      "protocol": 2,
+      "apyBps": 1233,
+      "adjustedApyBps": 863
+    },
+    {
+      "timestamp": 1770507741,
+      "protocol": 2,
+      "apyBps": 1149,
+      "adjustedApyBps": 804
+    },
+    {
+      "timestamp": 1770508042,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770508343,
+      "protocol": 2,
+      "apyBps": 1133,
+      "adjustedApyBps": 793
+    },
+    {
+      "timestamp": 1770508644,
+      "protocol": 2,
+      "apyBps": 1157,
+      "adjustedApyBps": 810
+    },
+    {
+      "timestamp": 1770508946,
+      "protocol": 2,
+      "apyBps": 1229,
+      "adjustedApyBps": 860
+    },
+    {
+      "timestamp": 1770509247,
+      "protocol": 2,
+      "apyBps": 1197,
+      "adjustedApyBps": 838
+    },
+    {
+      "timestamp": 1770509548,
+      "protocol": 2,
+      "apyBps": 1129,
+      "adjustedApyBps": 790
+    },
+    {
+      "timestamp": 1770509849,
+      "protocol": 2,
+      "apyBps": 1218,
+      "adjustedApyBps": 853
+    },
+    {
+      "timestamp": 1770510150,
+      "protocol": 2,
+      "apyBps": 1260,
+      "adjustedApyBps": 882
+    },
+    {
+      "timestamp": 1770510452,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770510756,
+      "protocol": 2,
+      "apyBps": 1183,
+      "adjustedApyBps": 828
+    },
+    {
+      "timestamp": 1770511057,
+      "protocol": 2,
+      "apyBps": 1137,
+      "adjustedApyBps": 796
+    },
+    {
+      "timestamp": 1770511358,
+      "protocol": 2,
+      "apyBps": 1214,
+      "adjustedApyBps": 850
+    },
+    {
+      "timestamp": 1770511659,
+      "protocol": 2,
+      "apyBps": 1238,
+      "adjustedApyBps": 867
+    },
+    {
+      "timestamp": 1770511960,
+      "protocol": 2,
+      "apyBps": 1255,
+      "adjustedApyBps": 879
+    },
+    {
+      "timestamp": 1770512261,
+      "protocol": 2,
+      "apyBps": 1137,
+      "adjustedApyBps": 796
+    },
+    {
+      "timestamp": 1770512562,
+      "protocol": 2,
+      "apyBps": 1187,
+      "adjustedApyBps": 831
+    },
+    {
+      "timestamp": 1770512863,
+      "protocol": 2,
+      "apyBps": 1240,
+      "adjustedApyBps": 868
+    },
+    {
+      "timestamp": 1770513164,
+      "protocol": 2,
+      "apyBps": 1147,
+      "adjustedApyBps": 803
+    },
+    {
+      "timestamp": 1770513465,
+      "protocol": 2,
+      "apyBps": 1252,
+      "adjustedApyBps": 876
+    },
+    {
+      "timestamp": 1770513766,
+      "protocol": 2,
+      "apyBps": 1165,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770514068,
+      "protocol": 2,
+      "apyBps": 1239,
+      "adjustedApyBps": 867
+    },
+    {
+      "timestamp": 1770514371,
+      "protocol": 2,
+      "apyBps": 1235,
+      "adjustedApyBps": 865
+    },
+    {
+      "timestamp": 1770514672,
+      "protocol": 2,
+      "apyBps": 1246,
+      "adjustedApyBps": 872
+    },
+    {
+      "timestamp": 1770514973,
+      "protocol": 2,
+      "apyBps": 1251,
+      "adjustedApyBps": 876
+    },
+    {
+      "timestamp": 1770515274,
+      "protocol": 2,
+      "apyBps": 1185,
+      "adjustedApyBps": 830
+    },
+    {
+      "timestamp": 1770515575,
+      "protocol": 2,
+      "apyBps": 1253,
+      "adjustedApyBps": 877
+    },
+    {
+      "timestamp": 1770515876,
+      "protocol": 2,
+      "apyBps": 1182,
+      "adjustedApyBps": 827
+    },
+    {
+      "timestamp": 1770516178,
+      "protocol": 2,
+      "apyBps": 1233,
+      "adjustedApyBps": 863
+    },
+    {
+      "timestamp": 1770516479,
+      "protocol": 2,
+      "apyBps": 1247,
+      "adjustedApyBps": 873
+    },
+    {
+      "timestamp": 1770516781,
+      "protocol": 2,
+      "apyBps": 1236,
+      "adjustedApyBps": 865
+    },
+    {
+      "timestamp": 1770517084,
+      "protocol": 2,
+      "apyBps": 1219,
+      "adjustedApyBps": 853
+    },
+    {
+      "timestamp": 1770517386,
+      "protocol": 2,
+      "apyBps": 1220,
+      "adjustedApyBps": 854
+    },
+    {
+      "timestamp": 1770517688,
+      "protocol": 2,
+      "apyBps": 1192,
+      "adjustedApyBps": 834
+    },
+    {
+      "timestamp": 1770517989,
+      "protocol": 2,
+      "apyBps": 1188,
+      "adjustedApyBps": 832
+    },
+    {
+      "timestamp": 1770518291,
+      "protocol": 2,
+      "apyBps": 1226,
+      "adjustedApyBps": 858
+    },
+    {
+      "timestamp": 1770518592,
+      "protocol": 2,
+      "apyBps": 1177,
+      "adjustedApyBps": 824
+    },
+    {
+      "timestamp": 1770518894,
+      "protocol": 2,
+      "apyBps": 1252,
+      "adjustedApyBps": 876
+    },
+    {
+      "timestamp": 1770519196,
+      "protocol": 2,
+      "apyBps": 1253,
+      "adjustedApyBps": 877
+    },
+    {
+      "timestamp": 1770519497,
+      "protocol": 2,
+      "apyBps": 1174,
+      "adjustedApyBps": 822
+    },
+    {
+      "timestamp": 1770519798,
+      "protocol": 2,
+      "apyBps": 1246,
+      "adjustedApyBps": 872
+    },
+    {
+      "timestamp": 1770520100,
+      "protocol": 2,
+      "apyBps": 1268,
+      "adjustedApyBps": 888
+    },
+    {
+      "timestamp": 1770520401,
+      "protocol": 2,
+      "apyBps": 1141,
+      "adjustedApyBps": 799
+    },
+    {
+      "timestamp": 1770520703,
+      "protocol": 2,
+      "apyBps": 1177,
+      "adjustedApyBps": 824
+    },
+    {
+      "timestamp": 1770521004,
+      "protocol": 2,
+      "apyBps": 1224,
+      "adjustedApyBps": 857
+    },
+    {
+      "timestamp": 1770521305,
+      "protocol": 2,
+      "apyBps": 1190,
+      "adjustedApyBps": 833
+    },
+    {
+      "timestamp": 1770521608,
+      "protocol": 2,
+      "apyBps": 1217,
+      "adjustedApyBps": 852
+    },
+    {
+      "timestamp": 1770521910,
+      "protocol": 2,
+      "apyBps": 1166,
+      "adjustedApyBps": 816
+    },
+    {
+      "timestamp": 1770522212,
+      "protocol": 2,
+      "apyBps": 1222,
+      "adjustedApyBps": 855
+    },
+    {
+      "timestamp": 1770522513,
+      "protocol": 2,
+      "apyBps": 1266,
+      "adjustedApyBps": 886
+    },
+    {
+      "timestamp": 1770522814,
+      "protocol": 2,
+      "apyBps": 1258,
+      "adjustedApyBps": 881
+    },
+    {
+      "timestamp": 1770523115,
+      "protocol": 2,
+      "apyBps": 1225,
+      "adjustedApyBps": 858
+    },
+    {
+      "timestamp": 1770523416,
+      "protocol": 2,
+      "apyBps": 1264,
+      "adjustedApyBps": 885
+    },
+    {
+      "timestamp": 1770523718,
+      "protocol": 2,
+      "apyBps": 1202,
+      "adjustedApyBps": 841
+    },
+    {
+      "timestamp": 1770524019,
+      "protocol": 2,
+      "apyBps": 1131,
+      "adjustedApyBps": 792
+    },
+    {
+      "timestamp": 1770524320,
+      "protocol": 2,
+      "apyBps": 1146,
+      "adjustedApyBps": 802
+    },
+    {
+      "timestamp": 1770524622,
+      "protocol": 2,
+      "apyBps": 1209,
+      "adjustedApyBps": 846
+    },
+    {
+      "timestamp": 1770524923,
+      "protocol": 2,
+      "apyBps": 1236,
+      "adjustedApyBps": 865
+    },
+    {
+      "timestamp": 1770525224,
+      "protocol": 2,
+      "apyBps": 1159,
+      "adjustedApyBps": 811
+    },
+    {
+      "timestamp": 1770525527,
+      "protocol": 2,
+      "apyBps": 1162,
+      "adjustedApyBps": 813
+    },
+    {
+      "timestamp": 1770525824,
+      "protocol": 2,
+      "apyBps": 1191,
+      "adjustedApyBps": 834,
+      "tvl": 197966471
     }
   ],
-  "lastUpdated": 1770293259590
+  "lastUpdated": 1770525824212
 }

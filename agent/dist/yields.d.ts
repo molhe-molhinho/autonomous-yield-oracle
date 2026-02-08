@@ -14,6 +14,7 @@ export interface YieldData {
     adjustedApyBps: number;
     pool?: string;
     timestamp: number;
+    tvlUsd?: number;
 }
 export declare class YieldFetcher {
     private cache;

@@ -102,6 +102,7 @@ export class YieldGravity {
                 protocol: y.protocol,
                 apyBps: y.apyBps,
                 adjustedApyBps: y.adjustedApyBps,
+                tvl: y.tvlUsd, // Track TVL for TVL Gravity!
             });
             // Trim old data
             if (snapshots.length > MAX_HISTORY_POINTS) {
@@ -160,9 +161,14 @@ export class YieldGravity {
         if (breakout) {
             signals.push(breakout);
         }
+        // TVL Gravity Analysis (NEW!)
+        const tvlAnalysis = this.analyzeTvl(snapshots, current.tvlUsd);
+        if (tvlAnalysis.signal) {
+            signals.push(tvlAnalysis.signal);
+        }
         // Calculate prediction
         const { predictedApy, confidence } = this.predictYield(snapshots, current, velocity, momentum);
-        // Calculate gravity score
+        // Calculate gravity score (now includes TVL impact)
         const signalImpact = signals.reduce((sum, s) => sum + s.impact, 0);
         const gravityScore = current.adjustedApyBps + signalImpact + (momentum * 20);
         return {
@@ -174,6 +180,9 @@ export class YieldGravity {
             velocityTrend,
             momentum,
             momentumStrength,
+            tvlUsd: current.tvlUsd,
+            tvlVelocityPerHour: tvlAnalysis.velocityPerHour,
+            tvlTrend: tvlAnalysis.trend,
             predictedApyBps: predictedApy,
             predictedAdjustedBps: Math.round(predictedApy * (100 - current.riskScore) / 100),
             confidence,
@@ -218,6 +227,64 @@ export class YieldGravity {
         if (totalMoves === 0)
             return 0;
         return (upMoves - downMoves) / totalMoves;
+    }
+    /**
+     * TVL Gravity - Analyze TVL trends to predict yield compression
+     *
+     * Key insight: When TVL rapidly increases, yields tend to compress.
+     * We want to EXIT before the crowd arrives, not after.
+     */
+    analyzeTvl(snapshots, currentTvl) {
+        // Need TVL data and history
+        const tvlSnapshots = snapshots.filter(s => s.tvl !== undefined && s.tvl > 0);
+        if (tvlSnapshots.length < 2 || !currentTvl) {
+            return { signal: null };
+        }
+        // Calculate TVL velocity (change per hour)
+        const recent = tvlSnapshots.slice(-VELOCITY_WINDOW);
+        if (recent.length < 2) {
+            return { velocityPerHour: 0, trend: 'stable', signal: null };
+        }
+        const first = recent[0];
+        const last = recent[recent.length - 1];
+        const timeDeltaHours = (last.timestamp - first.timestamp) / 3600;
+        if (timeDeltaHours < 0.1) {
+            return { velocityPerHour: 0, trend: 'stable', signal: null };
+        }
+        const tvlChange = (last.tvl - first.tvl);
+        const velocityPerHour = tvlChange / timeDeltaHours;
+        const changePercent = (tvlChange / first.tvl) * 100;
+        // Determine trend
+        const trend = changePercent > 2 ? 'inflow' :
+            changePercent < -2 ? 'outflow' :
+                'stable';
+        // Generate signals based on TVL movement
+        let signal = null;
+        // Large inflow = yield compression coming (NEGATIVE signal)
+        if (changePercent > 5) {
+            signal = {
+                type: 'tvl_compression',
+                message: `💰 TVL surging +${changePercent.toFixed(1)}% - yield compression likely`,
+                impact: Math.max(-40, -changePercent * 3), // Penalize heavily
+            };
+        }
+        // Large outflow = yield expansion coming (POSITIVE signal)
+        else if (changePercent < -5) {
+            signal = {
+                type: 'tvl_compression',
+                message: `📤 TVL dropping ${changePercent.toFixed(1)}% - yield expansion likely`,
+                impact: Math.min(40, Math.abs(changePercent) * 3), // Boost score
+            };
+        }
+        // Moderate inflow warning
+        else if (changePercent > 2) {
+            signal = {
+                type: 'warning',
+                message: `📊 TVL growing +${changePercent.toFixed(1)}%/hr - watch for compression`,
+                impact: -10,
+            };
+        }
+        return { velocityPerHour, trend, signal };
     }
     /**
      * Detect mean reversion opportunity
@@ -315,8 +382,12 @@ export class YieldGravity {
         const trend = a.velocityTrend === 'rising' ? '📈'
             : a.velocityTrend === 'falling' ? '📉'
                 : '➡️';
+        // Format TVL if available
+        const tvlStr = a.tvlUsd
+            ? ` | TVL: $${(a.tvlUsd / 1_000_000).toFixed(1)}M${a.tvlTrend === 'inflow' ? '⬆️' : a.tvlTrend === 'outflow' ? '⬇️' : ''}`
+            : '';
         return `${a.protocolName}: ${(a.currentApyBps / 100).toFixed(2)}% ${trend} ` +
-            `| Gravity: ${a.gravityScore.toFixed(0)} | ` +
+            `| Gravity: ${a.gravityScore.toFixed(0)}${tvlStr} | ` +
             `Predict: ${(a.predictedApyBps / 100).toFixed(2)}% (${(a.confidence * 100).toFixed(0)}% conf)`;
     }
     /**

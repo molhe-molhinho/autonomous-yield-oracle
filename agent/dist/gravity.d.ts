@@ -34,6 +34,9 @@ export interface GravityAnalysis {
     velocityTrend: 'rising' | 'falling' | 'stable';
     momentum: number;
     momentumStrength: 'strong' | 'moderate' | 'weak';
+    tvlUsd?: number;
+    tvlVelocityPerHour?: number;
+    tvlTrend?: 'inflow' | 'outflow' | 'stable';
     predictedApyBps: number;
     predictedAdjustedBps: number;
     confidence: number;
@@ -79,6 +82,13 @@ export declare class YieldGravity {
      * Positive = bullish, Negative = bearish
      */
     private calculateMomentum;
+    /**
+     * TVL Gravity - Analyze TVL trends to predict yield compression
+     *
+     * Key insight: When TVL rapidly increases, yields tend to compress.
+     * We want to EXIT before the crowd arrives, not after.
+     */
+    private analyzeTvl;
     /**
      * Detect mean reversion opportunity
      */

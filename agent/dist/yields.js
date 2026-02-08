@@ -96,6 +96,7 @@ export class YieldFetcher {
             adjustedApyBps: Math.round(apyBps * (100 - riskScore) / 100),
             pool: pool.symbol || pool.pool || 'Unknown',
             timestamp: Math.floor(Date.now() / 1000),
+            tvlUsd: pool.tvlUsd || undefined, // TVL from DeFiLlama for TVL Gravity
         };
     }
     /**
@@ -123,6 +124,7 @@ export class YieldFetcher {
                 adjustedApyBps: 0, // Will be calculated
                 pool: 'mSOL',
                 timestamp,
+                tvlUsd: 850_000_000 + Math.round(Math.random() * 50_000_000), // ~$850M
             },
             {
                 protocol: PROTOCOL.JITO,
@@ -132,6 +134,7 @@ export class YieldFetcher {
                 adjustedApyBps: 0,
                 pool: 'jitoSOL',
                 timestamp,
+                tvlUsd: 1_200_000_000 + Math.round(Math.random() * 100_000_000), // ~$1.2B
             },
             {
                 protocol: PROTOCOL.RAYDIUM_CPMM,
@@ -141,6 +144,7 @@ export class YieldFetcher {
                 adjustedApyBps: 0,
                 pool: 'SOL-USDC',
                 timestamp,
+                tvlUsd: 45_000_000 + Math.round(Math.random() * 10_000_000), // ~$45M
             },
             {
                 protocol: PROTOCOL.KAMINO,
@@ -150,6 +154,7 @@ export class YieldFetcher {
                 adjustedApyBps: 0,
                 pool: 'SOL-USDC',
                 timestamp,
+                tvlUsd: 180_000_000 + Math.round(Math.random() * 20_000_000), // ~$180M
             },
         ].map(y => ({
             ...y,
