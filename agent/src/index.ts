@@ -17,6 +17,7 @@ import { YieldFetcher, YieldData } from './yields.js';
 import { JupiterSwap } from './jupiter.js';
 import { DEFAULT_CONFIG, PROTOCOL_NAMES, PROGRAM_ID, PROTOCOL, ProtocolId, TOKENS } from './config.js';
 import { YieldGravity, GravityAnalysis } from './gravity.js';
+import { TelegramAlerts, TradeAlert } from './alerts.js';
 
 // Load environment
 config();
@@ -91,6 +92,7 @@ class YieldOracleAgent {
   private fetcher: YieldFetcher;
   private jupiter: JupiterSwap;
   private gravity: YieldGravity;
+  private alerts: TelegramAlerts;
   private oracleAddress: PublicKey | null = null;
   private config: AgentConfig;
   private isRunning: boolean = false;
@@ -108,6 +110,11 @@ class YieldOracleAgent {
     this.fetcher = new YieldFetcher();
     this.jupiter = new JupiterSwap(this.connection, this.payer);
     this.gravity = new YieldGravity();
+    this.alerts = new TelegramAlerts({
+      botToken: process.env.TELEGRAM_BOT_TOKEN,
+      chatId: process.env.TELEGRAM_CHAT_ID,
+      enabled: process.env.TELEGRAM_ALERTS !== 'false',
+    });
     this.traderState = this.loadTraderState();
 
     if (agentConfig.oracleAddress) {
@@ -176,6 +183,9 @@ class YieldOracleAgent {
       if (state && state.isInitialized) {
         this.log('INFO', `✅ Oracle found: ${this.oracleAddress.toBase58()}`);
         this.logOracleState(state);
+        
+        // Send startup alert
+        await this.alerts.alertStartup(this.oracleAddress.toBase58(), balance / 1e9);
         return;
       }
     }
@@ -245,6 +255,9 @@ class YieldOracleAgent {
     if (bestByGravity) {
       console.log(`\n🔮 Best by Gravity: ${bestByGravity.protocolName} (score: ${bestByGravity.gravityScore.toFixed(0)})`);
     }
+
+    // Send Telegram alerts for significant signals
+    await this.alerts.alertSignals(gravityAnalyses);
 
     // Get best overall yield (for oracle)
     const bestOverall = await this.fetcher.getBestYield(this.config.maxRiskScore);
@@ -383,6 +396,17 @@ class YieldOracleAgent {
           reason: `Best yield: ${bestYield.protocolName} @ ${(bestYield.apyBps / 100).toFixed(2)}%`,
         });
         this.saveTraderState();
+
+        // Send Telegram alert for trade
+        await this.alerts.alertTrade({
+          action: 'enter',
+          fromToken: 'SOL',
+          toToken: bestYield.pool || bestYield.protocolName,
+          amountIn: positionSize.toString(),
+          amountOut: result.outputAmount.toString(),
+          reason: `Best yield: ${bestYield.protocolName} @ ${(bestYield.apyBps / 100).toFixed(2)}%`,
+          signature: result.signature,
+        });
       } else {
         this.log('ERROR', 'Trade failed', { error: result.error });
       }
@@ -483,6 +507,17 @@ class YieldOracleAgent {
           reason: `Rebalance for ${(improvement / 100).toFixed(2)}% improvement`,
         });
         this.saveTraderState();
+
+        // Send Telegram alert for rebalance
+        await this.alerts.alertTrade({
+          action: 'rebalance',
+          fromToken: pos.token,
+          toToken: bestYield.pool || bestYield.protocolName,
+          amountIn: pos.amount,
+          amountOut: entryResult.outputAmount.toString(),
+          reason: `Rebalance for ${(improvement / 100).toFixed(2)}% improvement`,
+          signature: entryResult.signature,
+        });
       }
     } catch (error) {
       this.log('ERROR', 'Rebalance error', { error: String(error) });

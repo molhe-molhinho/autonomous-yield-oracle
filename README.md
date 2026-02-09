@@ -88,6 +88,33 @@ When TVL rapidly increases into a pool, yields compress. We track this and **exi
 
 This transforms reactive yield chasing into **predictive position management**.
 
+## 📱 Telegram Alerts (NEW!)
+
+**Real-time notifications when important events happen:**
+
+| Alert Type | Trigger |
+|------------|---------|
+| 🟢 **Trade Executed** | Position entered |
+| 🔴 **Position Exited** | Sold position |
+| 🔄 **Rebalanced** | Switched to better yield |
+| 🔮 **Signal Detected** | TVL compression, breakout, etc. |
+| 🚀 **Startup** | Agent came online |
+
+```
+🔮 YIELD GRAVITY SIGNALS
+
+• Raydium CPMM: ⚠️ Yields declining (-233bps/hr) (-50bps)
+• Kamino: 💰 TVL surging +6.2% - yield compression likely (-24bps)
+
+🤖 Autonomous Yield Oracle
+```
+
+Configure with environment variables:
+```bash
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+```
+
 ---
 
 ## 🎯 What Is This?
