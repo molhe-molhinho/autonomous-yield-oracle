@@ -18,6 +18,7 @@ import { JupiterSwap } from './jupiter.js';
 import { DEFAULT_CONFIG, PROTOCOL_NAMES, PROGRAM_ID, PROTOCOL, ProtocolId, TOKENS } from './config.js';
 import { YieldGravity, GravityAnalysis } from './gravity.js';
 import { TelegramAlerts, TradeAlert } from './alerts.js';
+import { MultiPositionManager } from './multi-position.js';
 
 // Load environment
 config();
@@ -93,6 +94,7 @@ class YieldOracleAgent {
   private jupiter: JupiterSwap;
   private gravity: YieldGravity;
   private alerts: TelegramAlerts;
+  private multiPosition: MultiPositionManager;
   private oracleAddress: PublicKey | null = null;
   private config: AgentConfig;
   private isRunning: boolean = false;
@@ -114,6 +116,11 @@ class YieldOracleAgent {
       botToken: process.env.TELEGRAM_BOT_TOKEN,
       chatId: process.env.TELEGRAM_CHAT_ID,
       enabled: process.env.TELEGRAM_ALERTS !== 'false',
+    });
+    this.multiPosition = new MultiPositionManager(this.connection, this.payer, {
+      maxPositions: parseInt(process.env.MAX_POSITIONS || '2'),
+      strategy: (process.env.ALLOCATION_STRATEGY as any) || 'yield-weighted',
+      enabled: process.env.MULTI_POSITION === 'true',
     });
     this.traderState = this.loadTraderState();
 
@@ -280,7 +287,26 @@ class YieldOracleAgent {
         , swappableYields[0]);
         
         console.log(`\n🎯 Best Swappable: ${YieldFetcher.formatYield(bestSwappable)}`);
-        await this.evaluateAndTrade(bestSwappable, swappableYields);
+        
+        // Multi-position mode: distribute across protocols
+        if (process.env.MULTI_POSITION === 'true') {
+          const balance = await this.connection.getBalance(this.payer.publicKey);
+          const availableSol = BigInt(balance) - 50_000_000n; // Keep 0.05 SOL for fees
+          
+          if (availableSol > 100_000_000n) { // Only if >0.1 SOL available
+            const portfolio = this.multiPosition.getPortfolioSummary();
+            console.log(`\n📊 Multi-Position Mode (${portfolio.strategy}):`);
+            console.log(`   Positions: ${MultiPositionManager.formatPortfolio(portfolio.positions)}`);
+            
+            const result = await this.multiPosition.rebalance(swappableYields, availableSol);
+            if (result.signatures.length > 0) {
+              this.log('INFO', `Multi-position rebalanced`, { signatures: result.signatures });
+            }
+          }
+        } else {
+          // Single position mode (original behavior)
+          await this.evaluateAndTrade(bestSwappable, swappableYields);
+        }
       }
     }
   }

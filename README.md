@@ -115,6 +115,44 @@ TELEGRAM_BOT_TOKEN=your_bot_token
 TELEGRAM_CHAT_ID=your_chat_id
 ```
 
+## 📊 Multi-Position Mode (NEW!)
+
+**Don't put all your eggs in one basket!**
+
+Instead of going all-in on one protocol, spread across multiple yield opportunities:
+
+| Strategy | Description |
+|----------|-------------|
+| `equal` | Split equally among top protocols |
+| `yield-weighted` | Higher yield = more allocation |
+| `risk-weighted` | Lower risk = more allocation |
+
+```
+📊 Multi-Position Mode (yield-weighted):
+   Target Allocations:
+   • Jito: 0.600 SOL (60.0%)
+   • Marinade: 0.400 SOL (40.0%)
+   
+   Current Positions:
+   • jitoSOL: 0.5500 | mSOL: 0.3800
+   
+   🔄 Rebalancing required...
+   → Allocating 0.050 SOL to Jito
+   → Allocating 0.020 SOL to Marinade
+```
+
+**Benefits:**
+- 🛡️ **Risk Diversification** - Protocol failures don't wipe you out
+- 📈 **Capture Multiple Yields** - Earn from top performers
+- 🔄 **Auto-Rebalancing** - Maintains target allocations
+
+Configure:
+```bash
+MULTI_POSITION=true
+MAX_POSITIONS=2
+ALLOCATION_STRATEGY=yield-weighted
+```
+
 ---
 
 ## 🎯 What Is This?

@@ -51,7 +51,7 @@ export class TelegramAlerts {
       chatId: config?.chatId || TELEGRAM_CHAT_ID,
       enabled: config?.enabled ?? true,
       alertOnTrades: config?.alertOnTrades ?? true,
-      alertOnSignals: config?.alertOnSignals ?? true,
+      alertOnSignals: config?.alertOnSignals ?? (process.env.TELEGRAM_ALERT_SIGNALS !== 'false'),
       alertOnErrors: config?.alertOnErrors ?? true,
       minSignalImpact: config?.minSignalImpact ?? 20, // 0.2% minimum impact
     };
