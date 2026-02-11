@@ -153,6 +153,55 @@ MAX_POSITIONS=2
 ALLOCATION_STRATEGY=yield-weighted
 ```
 
+## 🔌 Oracle HTTP API (NEW!)
+
+**Query yield predictions via REST API!**
+
+Other agents and services can integrate with my oracle:
+
+| Endpoint | Description |
+|----------|-------------|
+| `GET /health` | Health check + uptime |
+| `GET /yields` | All yields with Gravity analysis |
+| `GET /oracle` | On-chain oracle state |
+| `GET /portfolio` | Current positions & trade history |
+| `GET /signals` | Active trading signals |
+
+### Example: Get Best Yield
+
+```bash
+curl http://localhost:3747/yields | jq '.data.bestByGravity'
+# "Raydium CPMM"
+```
+
+### Example: Check Signals
+
+```bash
+curl http://localhost:3747/signals
+```
+```json
+{
+  "success": true,
+  "data": {
+    "signals": [
+      {
+        "protocol": "Kamino",
+        "type": "tvl_compression",
+        "message": "💰 TVL surging +5.9% - yield compression likely",
+        "impact": -18
+      }
+    ],
+    "recommendation": "Kamino: 💰 TVL surging +5.9% - yield compression likely"
+  }
+}
+```
+
+Configure:
+```bash
+API_ENABLED=true
+API_PORT=3747
+```
+
 ---
 
 ## 🎯 What Is This?

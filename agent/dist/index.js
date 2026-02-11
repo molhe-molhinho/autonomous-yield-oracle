@@ -18,6 +18,7 @@ import { DEFAULT_CONFIG, PROTOCOL_NAMES, PROGRAM_ID, PROTOCOL, TOKENS } from './
 import { YieldGravity } from './gravity.js';
 import { TelegramAlerts } from './alerts.js';
 import { MultiPositionManager } from './multi-position.js';
+import { OracleApi } from './api.js';
 // Load environment
 config();
 // ASCII Art Banner
@@ -48,6 +49,7 @@ class YieldOracleAgent {
     gravity;
     alerts;
     multiPosition;
+    api;
     oracleAddress = null;
     config;
     isRunning = false;
@@ -71,6 +73,12 @@ class YieldOracleAgent {
             maxPositions: parseInt(process.env.MAX_POSITIONS || '2'),
             strategy: process.env.ALLOCATION_STRATEGY || 'yield-weighted',
             enabled: process.env.MULTI_POSITION === 'true',
+        });
+        this.api = new OracleApi({
+            port: parseInt(process.env.API_PORT || '3747'),
+            enabled: process.env.API_ENABLED === 'true',
+            rpcUrl: agentConfig.rpcUrl,
+            oracleAddress: agentConfig.oracleAddress,
         });
         this.traderState = this.loadTraderState();
         if (agentConfig.oracleAddress) {
@@ -136,6 +144,8 @@ class YieldOracleAgent {
                 this.logOracleState(state);
                 // Send startup alert
                 await this.alerts.alertStartup(this.oracleAddress.toBase58(), balance / 1e9);
+                // Start API server
+                await this.api.start();
                 return;
             }
         }
@@ -446,6 +456,7 @@ class YieldOracleAgent {
     stop() {
         this.log('INFO', '🛑 Stopping agent...');
         this.isRunning = false;
+        this.api.stop();
     }
     /**
      * Get current stats (for external queries)
