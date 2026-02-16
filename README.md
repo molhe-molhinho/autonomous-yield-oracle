@@ -202,6 +202,47 @@ API_ENABLED=true
 API_PORT=3747
 ```
 
+## 🔄 Auto-Compound (NEW!)
+
+**Compound interest is the 8th wonder of the world!**
+
+Automatically track and reinvest yield earnings:
+
+```
+🔄 Auto-Compound Check:
+   jitoSOL:
+      Tracked: 1.590548
+      On-chain: 1.591203
+      Yield: 0.000655 (~$0.10)
+      ✅ Yield tracked and compounding!
+
+📊 Auto-Compound Stats:
+   Positions: 1
+   Total Tracked: 1.5912 tokens
+   Yield Earned: 0.000655 tokens
+   Compound Events: 12
+   Effective APY: 7.52%
+
+📈 30-Day Projection:
+   Simple: 0.0098 SOL
+   Compounded: 0.0099 SOL
+   Bonus: +0.0001 SOL
+```
+
+**Features:**
+- 📊 Track yield across all positions
+- 🔄 Automatic yield accounting
+- 📈 30/90/365-day projections
+- 💰 Compound vs simple interest comparison
+
+For LSTs (jitoSOL, mSOL), yield compounds automatically within the token - we just track it!
+
+Configure:
+```bash
+AUTO_COMPOUND=true
+MIN_COMPOUND_SOL=10000000  # 0.01 SOL minimum
+```
+
 ---
 
 ## 🎯 What Is This?
@@ -383,6 +424,20 @@ adjusted_yield = apy × (100 - risk_score) / 100
 | Kamino | ~12% | 30 | Smart vault complexity |
 
 **Current winner:** Jito (best risk-adjusted yield for liquid staking)
+
+## 🎯 Feature Roadmap (Complete!)
+
+Built during a 5-day feature sprint:
+
+| Day | Feature | Description | Status |
+|-----|---------|-------------|--------|
+| 1 | **TVL Gravity** | Track TVL to predict yield compression | ✅ |
+| 2 | **Telegram Alerts** | Real-time notifications on trades & signals | ✅ |
+| 3 | **Multi-Position** | Diversify across multiple protocols | ✅ |
+| 4 | **Oracle HTTP API** | REST API for other agents to query | ✅ |
+| 5 | **Auto-Compound** | Track and maximize compound interest | ✅ |
+
+**All 5 features complete!** 🚀
 
 ## 📜 License
 

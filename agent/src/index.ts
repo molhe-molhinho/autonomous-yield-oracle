@@ -20,6 +20,7 @@ import { YieldGravity, GravityAnalysis } from './gravity.js';
 import { TelegramAlerts, TradeAlert } from './alerts.js';
 import { MultiPositionManager } from './multi-position.js';
 import { OracleApi } from './api.js';
+import { AutoCompound } from './compound.js';
 
 // Load environment
 config();
@@ -97,6 +98,7 @@ class YieldOracleAgent {
   private alerts: TelegramAlerts;
   private multiPosition: MultiPositionManager;
   private api: OracleApi;
+  private compound: AutoCompound;
   private oracleAddress: PublicKey | null = null;
   private config: AgentConfig;
   private isRunning: boolean = false;
@@ -129,6 +131,10 @@ class YieldOracleAgent {
       enabled: process.env.API_ENABLED === 'true',
       rpcUrl: agentConfig.rpcUrl,
       oracleAddress: agentConfig.oracleAddress,
+    });
+    this.compound = new AutoCompound(this.connection, this.payer, {
+      enabled: process.env.AUTO_COMPOUND === 'true',
+      minCompoundSol: BigInt(process.env.MIN_COMPOUND_SOL || '10000000'),
     });
     this.traderState = this.loadTraderState();
 
@@ -318,6 +324,22 @@ class YieldOracleAgent {
           // Single position mode (original behavior)
           await this.evaluateAndTrade(bestSwappable, swappableYields);
         }
+      }
+    }
+
+    // Auto-compound check (if enabled)
+    if (process.env.AUTO_COMPOUND === 'true') {
+      const compoundResult = await this.compound.checkAndCompound();
+      if (compoundResult.compounded) {
+        const stats = this.compound.getStats();
+        console.log(AutoCompound.formatStats(stats));
+        
+        // Project future earnings
+        const projection = this.compound.projectEarnings(30);
+        console.log(`\n📈 30-Day Projection:`);
+        console.log(`   Simple: ${projection.projected}`);
+        console.log(`   Compounded: ${projection.withCompounding}`);
+        console.log(`   Bonus: ${projection.compoundBonus}`);
       }
     }
   }
